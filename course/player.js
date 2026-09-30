@@ -178,6 +178,7 @@
   }
 
   // ---------- 標題 & 選單 ----------
+  $("#btn-start").disabled = false; // 資料載入完成才可開始
   $("#btn-start").onclick = () => {
     ac = ac || new (window.AudioContext || window.webkitAudioContext)();
     sfx("select");

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>大人的自媒體</title>
-<link rel="stylesheet" href="style.css?v=20261008">
+<link rel="stylesheet" href="style.css?v=20261009">
 </head>
 <body>
 <div id="app">
@@ -19,7 +19,7 @@
         <div class="logo-sub">OnlyFans 實戰課</div>
         <button class="of-link big" data-of>💗 <span class="of-label">我的 OnlyFans</span> @bunnybrownie</button>
         <img class="title-char" src="img/char_blink.png" alt="">
-        <button id="btn-start" class="px-btn big blink-cta">▶ 按下開始</button>
+        <button id="btn-start" class="px-btn big blink-cta" disabled>⏳ Loading…</button>
       </div>
       <button class="px-btn small lang-btn lang-corner">EN</button>
     </section>
@@ -90,18 +90,26 @@
   <div id="no-voice-note" hidden>🎙️ 語音尚未生成，目前以字幕模式播放</div>
 </div>
 
-<script src="data/script.js?v=20261008"></script>
-<script src="data/script_m3_8.js?v=20261008"></script>
-<script src="data/script_en.js?v=20261008"></script>
-<script src="data/script_en_m3_8.js?v=20261008"></script>
-<script src="data/course_zh-Hans.js?v=20261008"></script>
-<script src="data/course_es.js?v=20261008"></script>
-<script src="data/course_pt.js?v=20261008"></script>
-<script src="data/course_ja.js?v=20261008"></script>
-<script src="data/course_de.js?v=20261008"></script>
-<script src="data/course_fr.js?v=20261008"></script>
-<script src="data/ui.js?v=20261008"></script>
-<script src="data/voice.js?v=20261008"></script>
-<script src="player.js?v=20261008"></script>
+<script>
+  // 課程資料載入前先把舞台置中縮放，避免首次開啟時畫面跑位
+  (function () {
+    var st = document.getElementById("stage");
+    function fit() { var k = Math.min(innerWidth / 1280, innerHeight / 720); st.style.transform = "translate(-50%, -50%) scale(" + k + ")"; }
+    fit(); addEventListener("resize", fit);
+  })();
+</script>
+<script src="data/script.js?v=20261009"></script>
+<script src="data/script_m3_8.js?v=20261009"></script>
+<script src="data/script_en.js?v=20261009"></script>
+<script src="data/script_en_m3_8.js?v=20261009"></script>
+<script src="data/course_zh-Hans.js?v=20261009"></script>
+<script src="data/course_es.js?v=20261009"></script>
+<script src="data/course_pt.js?v=20261009"></script>
+<script src="data/course_ja.js?v=20261009"></script>
+<script src="data/course_de.js?v=20261009"></script>
+<script src="data/course_fr.js?v=20261009"></script>
+<script src="data/ui.js?v=20261009"></script>
+<script src="data/voice.js?v=20261009"></script>
+<script src="player.js?v=20261009"></script>
 </body>
 </html>
