@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大人的自媒體</title>
+<link rel="stylesheet" href="style.css?v=20261008">
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <!-- 標題畫面 -->
+    <section id="title-screen" class="screen active">
+      <div class="bg" style="background-image:url(img/bg_title.jpg)"></div>
+      <div class="sparkles"></div>
+      <div class="title-wrap">
+        <div class="title-kicker">★ 全球 0.01% 創作者親授 ★</div>
+        <h1 class="logo">大人的自媒體</h1>
+        <div class="logo-sub">OnlyFans 實戰課</div>
+        <button class="of-link big" data-of>💗 <span class="of-label">我的 OnlyFans</span> @bunnybrownie</button>
+        <img class="title-char" src="img/char_blink.png" alt="">
+        <button id="btn-start" class="px-btn big blink-cta">▶ 按下開始</button>
+      </div>
+      <button class="px-btn small lang-btn lang-corner">EN</button>
+    </section>
+
+    <!-- 章節選單 -->
+    <section id="menu-screen" class="screen">
+      <div class="bg" style="background-image:url(img/bg_title.jpg)"></div>
+      <div class="menu-panel px-box">
+        <div class="menu-head">
+          <img src="img/char_idle.png" class="menu-avatar" alt="">
+          <div>
+            <div class="menu-title">選擇章節</div>
+            <div class="menu-hint">點任何一節開始上課 ♡</div>
+          </div>
+        </div>
+        <div id="menu-list"></div>
+      </div>
+    </section>
+
+    <!-- 上課畫面 -->
+    <section id="lesson-screen" class="screen">
+      <div class="bg" id="lesson-bg"></div>
+      <div class="dim"></div>
+      <div class="sparkles"></div>
+
+      <header class="hud">
+        <button class="px-btn small" id="btn-menu" title="章節選單">☰</button>
+        <div class="hud-left"><div class="hud-title"><span id="hud-module"></span><b id="hud-lesson"></b></div><button class="of-link small" data-of>💗 <span class="of-label">我的 OnlyFans</span> @bunnybrownie</button></div>
+        <div class="hud-progress"><div id="progress-bar"></div></div>
+      </header>
+
+      <div id="board" class="board px-box"></div>
+
+      <div id="char-wrap">
+        <div class="char-shadow"></div>
+        <img id="char" src="img/char_idle.png" alt="bunnybrownie">
+        <div id="emote"></div>
+      </div>
+
+      <div id="dialog" class="px-box">
+        <div class="nameplate">bunnybrownie ♡</div>
+        <div id="dialog-text"></div>
+        <div id="dialog-next">▼</div>
+      </div>
+
+      <footer class="controls">
+        <button class="px-btn small icon-btn" id="btn-prev" title="上一句 (←)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h2v12H2zM14 2h-2v1h-2v1H8v1H6v1H5v4h1v1h2v1h2v1h2v1h2z"/></svg></button>
+        <button class="px-btn small icon-btn play-btn" id="btn-play" title="播放/暫停 (空白鍵)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h4v12H3zM9 2h4v12H9z"/></svg></button>
+        <button class="px-btn small icon-btn" id="btn-next" title="下一句 (→)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12 2h2v12h-2zM2 2h2v1h2v1h2v1h2v1h1v4h-1v1H8v1H6v1H4v1H2z"/></svg></button>
+        <button class="px-btn small toggle on" id="btn-auto" title="自動播放">AUTO</button>
+        <button class="px-btn small toggle on" id="btn-bgm" title="背景音樂">♪</button>
+        <button class="px-btn small toggle on" id="btn-voice" title="語音">🔊</button>
+        <button class="px-btn small lang-btn">EN</button>
+      </footer>
+    </section>
+  </div>
+  <div id="age-gate" hidden>
+    <div class="gate-box px-box" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+      <div class="gate-icon">🔞</div>
+      <h2 id="gate-title">年齡確認</h2>
+      <p id="gate-text">即將前往的頁面含有成人內容，僅限年滿 18 歲（或你所在地區法定成年年齡）者瀏覽。</p>
+      <div class="gate-actions">
+        <button class="px-btn" id="gate-yes">我已滿 18 歲，前往</button>
+        <button class="px-btn gate-no" id="gate-no">未滿 18 歲／取消</button>
+      </div>
+    </div>
+  </div>
+  <div id="no-voice-note" hidden>🎙️ 語音尚未生成，目前以字幕模式播放</div>
+</div>
+
+<script src="data/script.js?v=20261008"></script>
+<script src="data/script_m3_8.js?v=20261008"></script>
+<script src="data/script_en.js?v=20261008"></script>
+<script src="data/script_en_m3_8.js?v=20261008"></script>
+<script src="data/course_zh-Hans.js?v=20261008"></script>
+<script src="data/course_es.js?v=20261008"></script>
+<script src="data/course_pt.js?v=20261008"></script>
+<script src="data/course_ja.js?v=20261008"></script>
+<script src="data/course_de.js?v=20261008"></script>
+<script src="data/course_fr.js?v=20261008"></script>
+<script src="data/ui.js?v=20261008"></script>
+<script src="data/voice.js?v=20261008"></script>
+<script src="player.js?v=20261008"></script>
+</body>
+</html>

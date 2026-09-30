@@ -1,0 +1,13 @@
+# 機密：API 金鑰絕對不能上傳
+API_KEY.txt
+*.env
+.env*
+
+# 真人照片（僅本機用來生成像素角色）
+assets/avatar-ref/
+
+# 中間產物與快取
+work/
+__pycache__/
+*.pyc
+.claude/
