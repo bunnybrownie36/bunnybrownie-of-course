@@ -2,7 +2,7 @@
 
 > 🔞 **18+ only.** This course is about running an adult-content creator business. It contains no explicit material, but it is intended for adults only.
 
-**▶ 開始上課 / 开始上课 / Start the course:** open [`course/index.html`](course/index.html)
+**▶ 開始上課 / 开始上课 / Start the course:** [bunnybrownie36.github.io/bunnybrownie-of-course](https://bunnybrownie36.github.io/bunnybrownie-of-course/)
 **💗 My OnlyFans (18+):** [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)
 
 <p align="center"><img src="course/img/char_blink.png" width="160" alt="bunnybrownie pixel avatar"></p>
@@ -46,7 +46,7 @@ Want to see the system in action? Come find me on OnlyFans 👉 **[onlyfans.com/
 - **8 modules · 30+ lessons**, each chapter with an intro and recap, played continuously
 - **8 languages:** 繁體中文 · 简体中文 · English · Español · Português · 日本語 · Deutsch · Français (Taiwan-specific lessons appear only in 繁體中文)
 - Pixel-art host character, voice narration, background music, interactive checklists, sourced data boards
-- Works offline: just open `course/index.html` in a browser (or publish the repo with GitHub Pages)
+- Online: https://bunnybrownie36.github.io/bunnybrownie-of-course/ · Offline: open `course/index.html` in a browser
 
 ### Notes
 
