@@ -11,3 +11,7 @@ work/
 __pycache__/
 *.pyc
 .claude/
+
+# 真實照片原檔（處理後的 600x900 版本才會進 course/img/photos）
+assets/real-photos/
+assets/photo-replacement/
