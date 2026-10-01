@@ -123,6 +123,7 @@ The OnlyFans link on every screen asks visitors to confirm they are 18+ before o
 ## ▶️ 怎麼觀看 · How to watch
 
 - **線上 Online：** <https://bunnybrownie36.github.io/bunnybrownie-of-course/>
+- **📱 手機／平板 Mobile & tablet：** 直接用手機瀏覽器打開同一個網址即可；直拿是直式版面、橫拿是寬螢幕版面，按鈕都放大成好點的尺寸。Works on phones and tablets in both portrait and landscape.
 - **離線 Offline：** 下載後直接用瀏覽器打開 `course/index.html`
 - 鍵盤：`空白鍵` 播放／暫停、`←` `→` 上一句／下一句
 

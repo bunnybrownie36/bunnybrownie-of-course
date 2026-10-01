@@ -492,3 +492,80 @@ body[data-lang="ja"] .b-docs .tx { font-size: 15px; }
 .b-title, .b-big, .b-done, .b-chapter { min-height: 380px; }
 .board.has-source .b-big { min-height: 330px; }
 .board-inner.measuring { min-height: 0 !important; }
+
+/* =================== 手機／平板直式版面（720×1280） =================== */
+html, body { touch-action: manipulation; -webkit-text-size-adjust: 100%; overscroll-behavior: none; }
+#stage.portrait { width: 720px; height: 1280px; }
+
+/* 標題 */
+#stage.portrait .title-wrap { padding-top: 190px; }
+#stage.portrait .title-kicker { font-size: 20px; text-align: center; padding: 0 20px; }
+#stage.portrait .logo { font-size: 88px; text-align: center; line-height: 1.15; }
+.lang-en #stage.portrait .logo, body.lang-en #stage.portrait .logo { font-size: 70px; }
+#stage.portrait .logo-sub { font-size: 34px; }
+#stage.portrait .title-char { width: 300px; height: 300px; margin-top: 30px; }
+#stage.portrait .of-link.big { font-size: 24px; padding: 10px 20px; }
+#stage.portrait #btn-start { font-size: 34px; padding: 18px 40px; margin-top: 10px; }
+#stage.portrait .lang-corner { font-size: 20px; padding: 8px 14px; }
+
+/* 選單 */
+#stage.portrait .menu-panel { width: 680px; max-height: 1200px; padding: 20px 20px; }
+#stage.portrait .menu-lessons { grid-template-columns: repeat(2, 1fr); }
+#stage.portrait .menu-lesson { font-size: 18px; padding: 12px; }
+#stage.portrait .menu-module small { display: block; margin: 4px 0 0; }
+
+/* 上課畫面：上方白板、中間角色、下方對話與控制 */
+#stage.portrait .hud { flex-wrap: wrap; row-gap: 8px; }
+#stage.portrait .hud-left { flex: 1 1 auto; min-width: 0; }
+#stage.portrait .hud-title { flex-wrap: wrap; max-width: 600px; }
+#stage.portrait .hud-progress { flex: 1 1 100%; order: 3; }
+#stage.portrait .board { left: 20px; right: 20px; top: 178px; width: auto; height: 520px; padding: 24px 26px; }
+#stage.portrait #char-wrap { left: 6px; bottom: 318px; width: 270px; height: 270px; }
+#stage.portrait #char { width: 270px; height: 270px; }
+#stage.portrait .char-shadow { left: 78px; width: 116px; height: 16px; }
+#stage.portrait #emote { left: 180px; top: 10px; }
+#stage.portrait #dialog { left: 20px; right: 20px; bottom: 116px; height: 220px; padding: 34px 26px 20px 26px; }
+#stage.portrait #dialog-text { font-size: 30px; line-height: 1.5; }
+#stage.portrait .nameplate { font-size: 22px; }
+#stage.portrait .controls { left: 20px; right: 20px; bottom: 24px; justify-content: space-between; gap: 8px; }
+#stage.portrait .controls .px-btn.small { flex: 1; min-width: 0; height: 68px; font-size: 22px; padding: 6px 4px; }
+#stage.portrait .icon-btn svg { width: 26px; height: 26px; }
+#stage.portrait #lang-menu { width: 420px; }
+#stage.portrait .lang-opt { font-size: 20px; padding: 10px; }
+#stage.portrait .of-link.small { font-size: 16px; padding: 5px 12px; }
+
+/* 角色右側空間：放大講師名牌與語錄裝飾 */
+#stage.portrait #lesson-screen .sparkles { opacity: .7; }
+
+/* 觸控裝置（含橫式手機）：按鈕放大，好點擊 */
+@media (pointer: coarse) {
+  #stage:not(.portrait) .controls .px-btn.small { min-width: 64px; height: 54px; font-size: 20px; }
+  #stage:not(.portrait) .icon-btn svg { width: 22px; height: 22px; }
+  #stage:not(.portrait) #btn-menu { min-width: 56px; height: 48px; }
+  .lang-opt { padding: 10px; font-size: 18px; }
+}
+
+/* 年齡確認：手機寬度 */
+@media (max-width: 480px) {
+  .gate-box { padding: 20px 16px; }
+  .gate-box h2 { font-size: 24px; }
+  .gate-box p { font-size: 16px; }
+}
+#stage.portrait .board { height: calc(var(--stage-h, 1280px) - 760px); }
+#stage.portrait .controls .lang-btn { flex: 1.4; white-space: nowrap; font-size: 18px; }
+#stage:not(.portrait) { height: 720px !important; }
+/* 直式：白板內容垂直置中、照片放大 */
+#stage.portrait .board-inner { display: flex; flex-direction: column; justify-content: center; }
+#stage.portrait .board-inner > * { flex: 0 0 auto; }
+#stage.portrait .b-photos.n1 { grid-template-columns: 300px; }
+#stage.portrait .b-photos.n2 { grid-template-columns: repeat(2, 280px); gap: 24px; }
+#stage.portrait .b-photos.n2 .ph, #stage.portrait .b-photos.n1 .ph { max-height: 420px; }
+#stage.portrait .b-photos.n4 { grid-template-columns: repeat(2, 250px); gap: 16px 28px; }
+#stage.portrait .b-photos.n4 .ph { max-height: 300px; }
+#stage.portrait .b-photos figcaption { font-size: 18px; }
+#stage.portrait .b-photos.n4 .ph { max-height: calc((var(--stage-h, 1280px) - 760px - 170px) / 2); }
+#stage.portrait .b-photos.n4 { grid-template-columns: repeat(2, calc(((var(--stage-h, 1280px) - 760px - 170px) / 2) * 0.667)); }
+#stage.portrait .b-photos.n2 .ph, #stage.portrait .b-photos.n1 .ph { max-height: min(420px, calc(var(--stage-h, 1280px) - 760px - 140px)); }
+#stage.portrait .b-photos.n2 { grid-template-columns: repeat(2, min(280px, calc((var(--stage-h, 1280px) - 760px - 140px) * 0.667))); }
+#stage.portrait .b-photos.n3 { grid-template-columns: repeat(3, 190px); }
+#stage.portrait .b-photos.n3 .ph { max-height: min(285px, calc(var(--stage-h, 1280px) - 760px - 140px)); }

@@ -11,9 +11,28 @@
 
   // ---------- 舞台縮放 ----------
   const stage = $("#stage");
+  // 直式螢幕（手機／平板直拿）改用 720×1280 的直式版面，其餘用 1280×720
+  let portrait = null;
   function fit() {
-    const s = Math.min(innerWidth / 1280, innerHeight / 720);
+    const p = innerWidth / innerHeight < 0.8;
+    // 直式：高度依螢幕比例延伸（1280～1560），讓長螢幕手機不留黑邊
+    const W = p ? 720 : 1280, H = p ? Math.round(Math.min(1560, Math.max(1280, 720 * innerHeight / innerWidth))) : 720;
+    stage.style.height = H + "px";
+    stage.style.setProperty("--stage-h", H + "px");
+    const s = Math.min(innerWidth / W, innerHeight / H);
+    stage.classList.toggle("portrait", p);
+    document.body.classList.toggle("portrait", p);
     stage.style.transform = `translate(-50%, -50%) scale(${s})`;
+    if (portrait !== null && portrait !== p) {
+      // 轉向後重新計算白板縮放與字幕字級
+      setTimeout(() => {
+        const b = document.querySelector("#board");
+        if (b && typeof fitBoard === "function") fitBoard(b);
+        const dt = document.querySelector("#dialog-text");
+        if (dt && dt.textContent && typeof fitDialog === "function") fitDialog(dt, dt.textContent);
+      }, 50);
+    }
+    portrait = p;
   }
   addEventListener("resize", fit); fit();
 
@@ -154,6 +173,12 @@
 
   // ---------- 背景音樂 ----------
   const bgm = new Audio(); bgm.loop = true;
+  const voiceEl = new Audio(); voiceEl.preload = "auto";
+  // iOS Safari：音訊元件需在使用者手勢中先播放一次才會解鎖
+  function unlockAudio() {
+    if (MUTE) return;
+    try { voiceEl.muted = true; voiceEl.play().then(() => { voiceEl.pause(); voiceEl.muted = false; }).catch(() => { voiceEl.muted = false; }); } catch (e) {}
+  }
   let bgmOn = store.get("bgm", true), voiceOn = store.get("voice", true), auto = store.get("auto", true);
   const BGM_VOL = 0.45, BGM_DUCK = 0.16; // Lyria 曲目已正規化到 -26 LUFS，說話時再壓低
   function playBgm(key) {
@@ -180,6 +205,7 @@
   // ---------- 標題 & 選單 ----------
   $("#btn-start").disabled = false; // 資料載入完成才可開始
   $("#btn-start").onclick = () => {
+    unlockAudio();
     ac = ac || new (window.AudioContext || window.webkitAudioContext)();
     sfx("select");
     playBgm("title");
@@ -209,11 +235,12 @@
 
   // ---------- 課堂播放 ----------
   const state = { li: 0, i: 0, playing: false, boardKey: null, boardType: null };
-  let timers = [], voice = null, flap = null, typer = null, lineDone = false;
+  let timers = [], voice = null, flap = null, typer = null, lineDone = false, lineToken = 0;
 
   function clearTimers() { timers.forEach(clearTimeout); timers = []; clearInterval(flap); clearInterval(typer); flap = typer = null; }
   function stopLine() {
     clearTimers();
+    lineToken++; // 讓上一句尚未完成的 play() 失敗回呼失效
     if (voice) { voice.onended = null; voice.pause(); voice = null; }
     duck(false);
     $("#char").classList.remove("talking");
@@ -302,22 +329,32 @@
       if (state.playing && auto) timers.push(setTimeout(() => playLine(state.i + 1), 900));
     };
     if (useVoice) {
-      voice = new Audio(v.file);
+      voice = voiceEl; voice.src = v.file;
       duck(true);
       voice.onended = onEnd;
-      voice.play().catch(() => timers.push(setTimeout(onEnd, dur * 1000)));
+      const token = ++lineToken;
+      voice.play().catch(() => { if (token === lineToken) timers.push(setTimeout(onEnd, dur * 1000)); });
       if (!state.playing) voice.pause();
     } else {
       timers.push(setTimeout(onEnd, dur * 1000));
     }
   }
 
+  function fitDialog(el, text) {
+    const keep = el.textContent;
+    el.style.fontSize = ""; el.textContent = text;
+    const d = $("#dialog"), cs = getComputedStyle(d);
+    const maxH = d.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom) - 2;
+    let fs = parseFloat(getComputedStyle(el).fontSize);
+    while (el.scrollHeight > maxH && fs > 15) { fs -= 1; el.style.fontSize = fs + "px"; }
+    el.textContent = keep;
+  }
+
   function typeText(text, seconds) {
     const el = $("#dialog-text");
     // 自動縮小字級，確保長句能完整放進對話框
-    el.style.fontSize = ""; el.textContent = text;
-    let fs = parseFloat(getComputedStyle(el).fontSize);
-    while (el.scrollHeight > 84 && fs > 15) { fs -= 1; el.style.fontSize = fs + "px"; }
+    el.textContent = text;
+    fitDialog(el, text);
     el.textContent = "";
     let n = 0; const step = Math.max(18, (seconds * 1000) / text.length);
     typer = setInterval(() => {
@@ -532,7 +569,7 @@ All content on @username belongs to me. You may not use, copy, reproduce, distri
     inner.classList.add("measuring"); // 量測內容本身的高度（不含 min-height）
     const k = Math.min(1, availH / inner.scrollHeight, availW / inner.scrollWidth);
     inner.classList.remove("measuring");
-    if (k < 0.995) inner.style.zoom = Math.max(0.72, k - 0.01);
+    if (k < 0.995) inner.style.zoom = Math.max(0.6, k - 0.01);
   }
 
   function updateScore(b) {
