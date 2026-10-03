@@ -39,7 +39,7 @@ window.COURSE.modules.push(
           { pose: "point", tts: "[confident] 先記最簡單的原則：主角要夠大！你就是畫面的主體，在縮圖裡最好佔到六到七成。",
             board: { type: "big", label: "第一原則", value: "主體佔 60–70%", note: "縮圖越小越要貼近 → 讓人在滑動中一眼看到重點" } },
           { pose: "talk", tts: "[explaining] 看看實際差別：左邊主角佔了畫面三分之二，縮圖一眼就看到；右邊人太小，滑過去根本不會停。",
-            board: { type: "photos", heading: "📸 主體大小：實例對比", items: [ { src: "fill_good", tag: "good", cap: "佔畫面約 2/3" }, { src: "fill_bad", tag: "bad", cap: "人太小、空間太多" } ] } },
+            board: { type: "photos", heading: "📸 主體大小：實例對比", items: [ { src: "fill_good", tag: "good", cap: "佔畫面約 2/3" }, { src: "fill_bad", tag: "bad", cap: "手腳太靠近鏡頭・變形" } ] } },
           { pose: "talk", tts: "[explaining] 光線：主體要比背景亮一點，大約亮半格到一格半。臉上不要有硬陰影，眼睛裡要有一點亮亮的眼神光，人就會活起來。",
             board: { type: "bullets", heading: "💡 光線", items: [
               { icon: "☀️", label: "主光清晰", text: "室內靠窗自然光＋柔光布" },
@@ -141,7 +141,7 @@ window.COURSE.modules.push(
               { icon: "🔎", label: "貼近鏡頭", text: "眼神停留 3 秒 → 親密感" },
               { icon: "↔️", label: "側臉 vs 留白", text: "神秘感與故事感" } ], reveal: 4 } },
           { pose: "point", tts: "[teaching] 四種機位的實際樣子：高機位顯得可愛，低機位顯腿長，貼近鏡頭有親密感，側臉加上留白，就有故事感。",
-            board: { type: "photos", heading: "📸 機位菜單：實例", items: [ { src: "angle_high", tag: "", cap: "高機位＋2/3 臉" }, { src: "angle_low", tag: "", cap: "低機位・顯腿長" }, { src: "angle_close", tag: "", cap: "貼近・眼神交流" }, { src: "angle_side", tag: "", cap: "側臉＋留白" } ] } },
+            board: { type: "photos", heading: "📸 機位菜單：實例", items: [ { src: "angle_high", tag: "", cap: "高機位＋2/3 臉" }, { src: "angle_low", tag: "", cap: "坐地全身・俯拍" }, { src: "angle_close", tag: "", cap: "貼近・眼神交流" }, { src: "angle_side", tag: "", cap: "平視＋眼鏡小道具" } ] } },
           { pose: "talk", tts: "[soft, intimate] 表情可以練一個序列：微笑的眼神、嘴唇微張、側看鏡頭、輕輕呼吸。對著鏡子練，練到可以自然切換。",
             board: { type: "steps", heading: "😊 表情序列（對鏡練習）", items: [
               { label: "微笑眼神", text: "先讓眼睛笑" },

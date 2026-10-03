@@ -1829,7 +1829,7 @@ window.COURSES["ja"] = {
          {
           "src": "fill_bad",
           "tag": "bad",
-          "cap": "小さすぎて余白が多い"
+          "cap": "腕と膝が近すぎ・歪み"
          }
         ]
        }
@@ -2313,7 +2313,7 @@ window.COURSES["ja"] = {
          {
           "src": "angle_low",
           "tag": "",
-          "cap": "ロー・脚長"
+          "cap": "床ポーズ・上から撮影"
          },
          {
           "src": "angle_close",
@@ -2323,7 +2323,7 @@ window.COURSES["ja"] = {
          {
           "src": "angle_side",
           "tag": "",
-          "cap": "横顔＋余白"
+          "cap": "目線の高さ＋メガネ小物"
          }
         ]
        }

@@ -205,12 +205,16 @@
   // ---------- 標題 & 選單 ----------
   $("#btn-start").disabled = false; // 資料載入完成才可開始
   $("#btn-start").onclick = () => {
+    if (!store.get("adult")) return openGate(null, "enter", start); // 第一次進課程先確認 18+
+    start();
+  };
+  function start() {
     unlockAudio();
     ac = ac || new (window.AudioContext || window.webkitAudioContext)();
     sfx("select");
     playBgm("title");
     wipe(() => { buildMenu(); show("menu-screen"); });
-  };
+  }
   function buildMenu() {
     const done = store.get("done", {});
     const list = $("#menu-list"); list.innerHTML = "";
@@ -432,6 +436,7 @@
     if (!m) return;
     const li = LESSONS.findIndex((l) => l.id === m[1]);
     if (li < 0) return;
+    if (!store.get("adult")) return openGate(null, "enter", fromHash); // 直接連到某一頁也要先確認 18+
     stopLine();
     enterLesson(li);
     setPlaying(!m[2]);
@@ -441,10 +446,19 @@
 
   // ---------- OnlyFans 連結＋年齡確認 ----------
   const gate = $("#age-gate");
-  let resumeAfterGate = false;
-  function openGate(e) {
-    e.stopPropagation();
-    sfx("select");
+  let resumeAfterGate = false, gateMode = "of", gateThen = null;
+  // mode "of"：前往 OnlyFans；mode "enter"：進入課程（確認後記住，不再詢問）
+  function openGate(e, mode, then) {
+    if (e) e.stopPropagation();
+    gateMode = mode === "enter" ? "enter" : "of";
+    gateThen = then || null;
+    const enter = gateMode === "enter";
+    $("#gate-text").textContent = enter ? T.enterText : T.gateText;
+    $("#gate-yes").textContent = enter ? T.enterYes : T.gateYes;
+    $("#gate-no").textContent = enter ? T.enterNo : T.gateNo;
+    if (enter) {
+      if (!gate.hidden) return; // 已經開著（例如 hashchange 又觸發一次）
+    } else sfx("select");
     resumeAfterGate = state.playing;
     if (state.playing) setPlaying(false);
     gate.hidden = false;
@@ -457,6 +471,14 @@
   document.querySelectorAll("[data-of]").forEach((b) => b.onclick = openGate);
   $("#gate-yes").onclick = (e) => {
     e.stopPropagation();
+    if (gateMode === "enter") {
+      store.set("adult", true);
+      const then = gateThen;
+      resumeAfterGate = false;
+      closeGate();
+      if (then) then();
+      return;
+    }
     window.open(window.OF_URL, "_blank", "noopener,noreferrer");
     closeGate();
   };

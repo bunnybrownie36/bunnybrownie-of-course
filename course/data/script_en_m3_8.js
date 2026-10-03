@@ -39,7 +39,7 @@ window.COURSE_EN.modules.push(
           { pose: "point", tts: "[confident] Start with the simplest rule: make yourself big! You're the subject, so fill about sixty to seventy percent of the thumbnail.",
             board: { type: "big", label: "Rule number one", value: "Subject = 60–70%", note: "The smaller the thumbnail, the closer you get → instantly readable mid-scroll" } },
           { pose: "talk", tts: "[explaining] See the difference: on the left, she fills two-thirds of the frame and reads instantly as a thumbnail. On the right, she's tiny, and nobody stops scrolling.",
-            board: { type: "photos", heading: "📸 Subject size: side by side", items: [ { src: "fill_good", tag: "good", cap: "Fills about 2/3" }, { src: "fill_bad", tag: "bad", cap: "Too small, too much room" } ] } },
+            board: { type: "photos", heading: "📸 Subject size: side by side", items: [ { src: "fill_good", tag: "good", cap: "Fills about 2/3" }, { src: "fill_bad", tag: "bad", cap: "Limbs too close · distorted" } ] } },
           { pose: "talk", tts: "[explaining] Light: the subject should be a little brighter than the background, about half a stop to a stop and a half. No harsh shadows on the face, and a little sparkle in the eyes brings you to life.",
             board: { type: "bullets", heading: "💡 Light", items: [
               { icon: "☀️", label: "Clear key light", text: "Window light + diffusion" },
@@ -141,7 +141,7 @@ window.COURSE_EN.modules.push(
               { icon: "🔎", label: "Close-up", text: "Hold eye contact 3 s → intimacy" },
               { icon: "↔️", label: "Profile vs space", text: "Mystery and story" } ], reveal: 4 } },
           { pose: "point", tts: "[teaching] Here's what the four angles look like: high angle looks cute, low angle makes legs look long, close-up feels intimate, and a profile with space tells a story.",
-            board: { type: "photos", heading: "📸 Angle menu: examples", items: [ { src: "angle_high", tag: "", cap: "High + 3/4 face" }, { src: "angle_low", tag: "", cap: "Low · longer legs" }, { src: "angle_close", tag: "", cap: "Close · eye contact" }, { src: "angle_side", tag: "", cap: "Profile + space" } ] } },
+            board: { type: "photos", heading: "📸 Angle menu: examples", items: [ { src: "angle_high", tag: "", cap: "High + 3/4 face" }, { src: "angle_low", tag: "", cap: "Floor pose · shot from above" }, { src: "angle_close", tag: "", cap: "Close · eye contact" }, { src: "angle_side", tag: "", cap: "Eye level · glasses prop" } ] } },
           { pose: "talk", tts: "[soft, intimate] Practice an expression sequence: smiling eyes, parted lips, a sideways glance at the camera, a soft breath. Practice in the mirror until it flows.",
             board: { type: "steps", heading: "😊 Expression sequence (mirror practice)", items: [
               { label: "Smiling eyes", text: "Let your eyes smile first" },

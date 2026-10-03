@@ -1829,7 +1829,7 @@ window.COURSES["pt"] = {
          {
           "src": "fill_bad",
           "tag": "bad",
-          "cap": "Pequeno demais, espaço demais"
+          "cap": "Braço e joelho perto demais · distorção"
          }
         ]
        }
@@ -2313,7 +2313,7 @@ window.COURSES["pt"] = {
          {
           "src": "angle_low",
           "tag": "",
-          "cap": "Baixo · pernas mais longas"
+          "cap": "Pose no chão · vista de cima"
          },
          {
           "src": "angle_close",
@@ -2323,7 +2323,7 @@ window.COURSES["pt"] = {
          {
           "src": "angle_side",
           "tag": "",
-          "cap": "Perfil + espaço"
+          "cap": "Altura dos olhos · óculos"
          }
         ]
        }

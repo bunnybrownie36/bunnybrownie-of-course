@@ -17,7 +17,7 @@
 
 </div>
 
-> 🔞 **18+ only.** 本課程討論成人內容創作者的經營方法，不含露骨內容，但僅供成年人觀看。This course is about running an adult-content creator business. It contains no explicit material, but it is intended for adults only.
+> 🔞 **18+ only.** 本課程討論成人內容創作者的經營方法，含有創作者本人的性感照片範例，僅供年滿 18 歲者觀看；進入課程前會先確認年齡。This course is about running an adult-content creator business and includes suggestive photos of the creator. Adults (18+) only; visitors confirm their age before entering.
 
 ---
 
@@ -41,7 +41,7 @@
 </td>
 <td width="50%" valign="top">
 <img src="docs/media/photos.gif" alt="拍攝範例照片">
-<br><b>實拍範例照片</b><br>光線、構圖、主體大小、機位——好壞對比一看就懂。<br><sub>Do / don't photo examples for lighting, framing and angles.</sub>
+<br><b>真人實拍範例</b><br>我自己拍的照片：光線、構圖、主體大小、機位——好壞對比一看就懂。<br><sub>Real do / don't photos of me for lighting, framing and angles.</sub>
 </td>
 </tr>
 <tr>
@@ -115,8 +115,8 @@
 
 <img src="docs/media/agegate.gif" width="480" alt="年齡確認">
 
-課程首頁與每一節左上角都有我的 OnlyFans 連結；點擊後會先確認已滿 18 歲，才會開新視窗前往。
-The OnlyFans link on every screen asks visitors to confirm they are 18+ before opening.
+第一次按「開始」進入課程時，會先確認已滿 18 歲（確認後不再詢問）。課程首頁與每一節左上角都有我的 OnlyFans 連結，點擊後同樣會先確認年齡，才會開新視窗前往。
+Visitors confirm they are 18+ the first time they enter the course, and again before the OnlyFans link opens.
 
 ---
 
@@ -129,7 +129,7 @@ The OnlyFans link on every screen asks visitors to confirm they are 18+ before o
 
 ### Notes
 - 課程內容為一般教育用途，**不構成法律、稅務或投資建議**；平台規則常變動，請以最新條款為準。Not legal, tax, or financial advice.
-- 語音 Fish Audio · 音樂 Google Lyria 3.5 · 插畫 GPT Image 2.5 · 字型 [Cubic 11](https://github.com/ACh-K/Cubic-11)、[Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)（SIL OFL 1.1）
+- 語音 Fish Audio · 音樂 Google Lyria 3.5 · 插畫 GPT Image 2.5 · 範例照片為創作者本人實拍 · 字型 [Cubic 11](https://github.com/ACh-K/Cubic-11)、[Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)（SIL OFL 1.1）
 
 <div align="center">
 

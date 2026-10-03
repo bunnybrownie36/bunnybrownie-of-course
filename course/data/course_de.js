@@ -1829,7 +1829,7 @@ window.COURSES["de"] = {
          {
           "src": "fill_bad",
           "tag": "bad",
-          "cap": "Zu klein, zu viel Platz"
+          "cap": "Arm & Knie zu nah · verzerrt"
          }
         ]
        }
@@ -2313,7 +2313,7 @@ window.COURSES["de"] = {
          {
           "src": "angle_low",
           "tag": "",
-          "cap": "Tief · längere Beine"
+          "cap": "Bodenpose · von oben"
          },
          {
           "src": "angle_close",
@@ -2323,7 +2323,7 @@ window.COURSES["de"] = {
          {
           "src": "angle_side",
           "tag": "",
-          "cap": "Profil + Raum"
+          "cap": "Augenhöhe · Brille als Requisite"
          }
         ]
        }

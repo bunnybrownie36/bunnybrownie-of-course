@@ -2019,7 +2019,7 @@ window.COURSES["zh-Hans"] = {
          {
           "src": "fill_bad",
           "tag": "bad",
-          "cap": "人太小、空间太多"
+          "cap": "手脚太靠近镜头・变形"
          }
         ]
        }
@@ -2503,7 +2503,7 @@ window.COURSES["zh-Hans"] = {
          {
           "src": "angle_low",
           "tag": "",
-          "cap": "低机位・显腿长"
+          "cap": "坐地全身・俯拍"
          },
          {
           "src": "angle_close",
@@ -2513,7 +2513,7 @@ window.COURSES["zh-Hans"] = {
          {
           "src": "angle_side",
           "tag": "",
-          "cap": "侧脸＋留白"
+          "cap": "平视＋眼镜小道具"
          }
         ]
        }

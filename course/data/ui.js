@@ -17,7 +17,7 @@ const bioSideEN = [["@your job", "Real job or online persona"], ["NSFW", "State 
 
 window.UI_STRINGS = {
   "zh-Hant": {
-    ofLink: "我的 OnlyFans", gateTitle: "年齡確認", gateText: "即將前往的頁面含有成人內容，僅限年滿 18 歲（或你所在地區法定成年年齡）者瀏覽。", gateYes: "我已滿 18 歲，前往", gateNo: "未滿 18 歲／取消",
+    ofLink: "我的 OnlyFans", gateTitle: "年齡確認", gateText: "即將前往的頁面含有成人內容，僅限年滿 18 歲（或你所在地區法定成年年齡）者瀏覽。", gateYes: "我已滿 18 歲，前往", gateNo: "未滿 18 歲／取消", enterText: "本課程討論成人內容創作者的經營方式，含有性感照片範例，僅限年滿 18 歲（或你所在地區法定成年年齡）者觀看。", enterYes: "我已滿 18 歲，進入課程", enterNo: "未滿 18 歲／離開",
     kicker: "★ 全球 0.01% 創作者 bunnybrownie 親授 ★", logo: "大人的自媒體", logoSub: "OnlyFans 實戰課", start: "▶ 按下開始",
     menuTitle: "選擇章節", menuHint: "點任何一節開始上課 ♡", name: "bunnybrownie ♡", noVoice: "🎙️ 語音尚未生成，目前以字幕模式播放",
     end: "全部課程到這裡結束囉～謝謝你一路陪我上完，我們線上見 ♡", bio: "📝 簡介公版",
@@ -27,7 +27,7 @@ window.UI_STRINGS = {
     ctrl: { prev: "上一句 (←)", play: "播放／暫停 (空白鍵)", next: "下一句 (→)", auto: "自動播放", bgm: "背景音樂", voice: "語音", menu: "章節選單" },
   },
   "zh-Hans": {
-    ofLink: "我的 OnlyFans", gateTitle: "年龄确认", gateText: "即将前往的页面含有成人内容，仅限年满 18 岁（或你所在地区法定成年年龄）者浏览。", gateYes: "我已满 18 岁，前往", gateNo: "未满 18 岁／取消",
+    ofLink: "我的 OnlyFans", gateTitle: "年龄确认", gateText: "即将前往的页面含有成人内容，仅限年满 18 岁（或你所在地区法定成年年龄）者浏览。", gateYes: "我已满 18 岁，前往", gateNo: "未满 18 岁／取消", enterText: "本课程讨论成人内容创作者的经营方式，含有性感照片范例，仅限年满 18 岁（或你所在地区法定成年年龄）者观看。", enterYes: "我已满 18 岁，进入课程", enterNo: "未满 18 岁／离开",
     kicker: "★ 全球 0.01% 创作者 bunnybrownie 亲授 ★", logo: "大人的自媒体", logoSub: "OnlyFans 实战课", start: "▶ 按下开始",
     menuTitle: "选择章节", menuHint: "点任何一节开始上课 ♡", name: "bunnybrownie ♡", noVoice: "🎙️ 语音尚未生成，目前以字幕模式播放",
     end: "全部课程到这里结束啦～谢谢你一路陪我上完，我们线上见 ♡", bio: "📝 简介模板",
@@ -37,7 +37,7 @@ window.UI_STRINGS = {
     ctrl: { prev: "上一句 (←)", play: "播放／暂停 (空格)", next: "下一句 (→)", auto: "自动播放", bgm: "背景音乐", voice: "语音", menu: "章节菜单" },
   },
   en: {
-    ofLink: "My OnlyFans", gateTitle: "Age verification", gateText: "The page you're about to visit contains adult content and is only for people aged 18+ (or the age of majority where you live).", gateYes: "I'm 18 or older — continue", gateNo: "I'm under 18 / Cancel",
+    ofLink: "My OnlyFans", gateTitle: "Age verification", gateText: "The page you're about to visit contains adult content and is only for people aged 18+ (or the age of majority where you live).", gateYes: "I'm 18 or older — continue", gateNo: "I'm under 18 / Cancel", enterText: "This course is about running an adult-content creator business and includes suggestive photo examples. It's only for people aged 18+ (or the age of majority where you live).", enterYes: "I'm 18 or older — enter", enterNo: "I'm under 18 / Leave",
     kicker: "★ Taught by bunnybrownie · global top 0.01% ★", logo: "Adult Creator", logoSub: "OnlyFans Masterclass", start: "▶ PRESS START",
     menuTitle: "Choose a lesson", menuHint: "Pick any lesson to begin ♡", name: "bunnybrownie ♡", noVoice: "🎙️ Voice not generated yet — subtitle mode",
     end: "That's the whole course — thank you for learning with me. See you online ♡", bio: "📝 Bio template", bioSide: bioSideEN,
@@ -46,7 +46,7 @@ window.UI_STRINGS = {
     ctrl: { prev: "Previous (←)", play: "Play / pause (space)", next: "Next (→)", auto: "Auto-play", bgm: "Music", voice: "Voice", menu: "Lessons" },
   },
   es: {
-    ofLink: "Mi OnlyFans", gateTitle: "Verificación de edad", gateText: "La página que vas a visitar contiene contenido para adultos y es solo para mayores de 18 años (o la mayoría de edad en tu país).", gateYes: "Tengo 18 o más — continuar", gateNo: "Soy menor / Cancelar",
+    ofLink: "Mi OnlyFans", gateTitle: "Verificación de edad", gateText: "La página que vas a visitar contiene contenido para adultos y es solo para mayores de 18 años (o la mayoría de edad en tu país).", gateYes: "Tengo 18 o más — continuar", gateNo: "Soy menor / Cancelar", enterText: "Este curso trata sobre cómo gestionar un negocio de contenido para adultos e incluye fotos sugerentes de ejemplo. Es solo para mayores de 18 años (o la mayoría de edad en tu país).", enterYes: "Tengo 18 o más — entrar", enterNo: "Soy menor / Salir",
     kicker: "★ Impartido por bunnybrownie · top 0,01% mundial ★", logo: "Creadora Adulta", logoSub: "Curso práctico de OnlyFans", start: "▶ EMPEZAR",
     menuTitle: "Elige una lección", menuHint: "Toca cualquier lección para empezar ♡", name: "bunnybrownie ♡", noVoice: "🎙️ Voz aún no generada — modo subtítulos",
     end: "¡Ese es todo el curso! Gracias por aprender conmigo. Nos vemos en línea ♡", bio: "📝 Plantilla de bio",
@@ -56,7 +56,7 @@ window.UI_STRINGS = {
     ctrl: { prev: "Anterior (←)", play: "Reproducir / pausa (espacio)", next: "Siguiente (→)", auto: "Auto", bgm: "Música", voice: "Voz", menu: "Lecciones" },
   },
   pt: {
-    ofLink: "Meu OnlyFans", gateTitle: "Verificação de idade", gateText: "A página que você vai visitar tem conteúdo adulto e é só para maiores de 18 anos (ou a maioridade no seu país).", gateYes: "Tenho 18 ou mais — continuar", gateNo: "Sou menor / Cancelar",
+    ofLink: "Meu OnlyFans", gateTitle: "Verificação de idade", gateText: "A página que você vai visitar tem conteúdo adulto e é só para maiores de 18 anos (ou a maioridade no seu país).", gateYes: "Tenho 18 ou mais — continuar", gateNo: "Sou menor / Cancelar", enterText: "Este curso é sobre como gerir um negócio de conteúdo adulto e inclui fotos sensuais de exemplo. É só para maiores de 18 anos (ou a maioridade no seu país).", enterYes: "Tenho 18 ou mais — entrar", enterNo: "Sou menor / Sair",
     kicker: "★ Com bunnybrownie · top 0,01% mundial ★", logo: "Criadora Adulta", logoSub: "Curso prático de OnlyFans", start: "▶ COMEÇAR",
     menuTitle: "Escolha uma aula", menuHint: "Toque em qualquer aula para começar ♡", name: "bunnybrownie ♡", noVoice: "🎙️ Voz ainda não gerada — modo legenda",
     end: "Esse é o curso completo — obrigada por aprender comigo. Até mais ♡", bio: "📝 Modelo de bio",
@@ -66,7 +66,7 @@ window.UI_STRINGS = {
     ctrl: { prev: "Anterior (←)", play: "Tocar / pausar (espaço)", next: "Próximo (→)", auto: "Auto", bgm: "Música", voice: "Voz", menu: "Aulas" },
   },
   ja: {
-    ofLink: "私のOnlyFans", gateTitle: "年齢確認", gateText: "この先のページには成人向けコンテンツが含まれます。18歳以上（またはお住まいの地域の成人年齢以上）の方のみご覧いただけます。", gateYes: "18歳以上です — 進む", gateNo: "18歳未満／キャンセル",
+    ofLink: "私のOnlyFans", gateTitle: "年齢確認", gateText: "この先のページには成人向けコンテンツが含まれます。18歳以上（またはお住まいの地域の成人年齢以上）の方のみご覧いただけます。", gateYes: "18歳以上です — 進む", gateNo: "18歳未満／キャンセル", enterText: "この講座は成人向けコンテンツクリエイターの運営方法を扱い、セクシーな写真の例を含みます。18歳以上（またはお住まいの地域の成人年齢以上）の方のみご覧いただけます。", enterYes: "18歳以上です — 入る", enterNo: "18歳未満／やめる",
     kicker: "★ 世界トップ0.01% bunnybrownie 直伝 ★", logo: "大人のメディア術", logoSub: "OnlyFans 実践講座", start: "▶ スタート",
     menuTitle: "レッスンを選ぶ", menuHint: "好きなレッスンから始めよう ♡", name: "bunnybrownie ♡", noVoice: "🎙️ 音声はまだ生成されていません（字幕モード）",
     end: "これで全講座おしまい！最後まで一緒に学んでくれてありがとう。またオンラインで会おうね ♡", bio: "📝 プロフィール文テンプレート",
@@ -76,7 +76,7 @@ window.UI_STRINGS = {
     ctrl: { prev: "前へ (←)", play: "再生／一時停止 (スペース)", next: "次へ (→)", auto: "自動再生", bgm: "BGM", voice: "音声", menu: "レッスン一覧" },
   },
   de: {
-    ofLink: "Mein OnlyFans", gateTitle: "Altersbestätigung", gateText: "Die folgende Seite enthält Inhalte für Erwachsene und ist nur für Personen ab 18 Jahren (bzw. ab der Volljährigkeit in deinem Land).", gateYes: "Ich bin 18+ — weiter", gateNo: "Unter 18 / Abbrechen",
+    ofLink: "Mein OnlyFans", gateTitle: "Altersbestätigung", gateText: "Die folgende Seite enthält Inhalte für Erwachsene und ist nur für Personen ab 18 Jahren (bzw. ab der Volljährigkeit in deinem Land).", gateYes: "Ich bin 18+ — weiter", gateNo: "Unter 18 / Abbrechen", enterText: "Dieser Kurs behandelt das Business als Creatorin von Erwachseneninhalten und enthält aufreizende Beispielfotos. Er ist nur für Personen ab 18 Jahren (bzw. ab der Volljährigkeit in deinem Land).", enterYes: "Ich bin 18+ — eintreten", enterNo: "Unter 18 / Verlassen",
     kicker: "★ Mit bunnybrownie · weltweit Top 0,01 % ★", logo: "Adult Creator", logoSub: "OnlyFans-Praxiskurs", start: "▶ STARTEN",
     menuTitle: "Lektion wählen", menuHint: "Wähle eine Lektion zum Starten ♡", name: "bunnybrownie ♡", noVoice: "🎙️ Stimme noch nicht erzeugt — Untertitelmodus",
     end: "Das war der ganze Kurs — danke, dass du mit mir gelernt hast. Bis bald online ♡", bio: "📝 Bio-Vorlage",
@@ -86,7 +86,7 @@ window.UI_STRINGS = {
     ctrl: { prev: "Zurück (←)", play: "Abspielen / Pause (Leertaste)", next: "Weiter (→)", auto: "Auto", bgm: "Musik", voice: "Stimme", menu: "Lektionen" },
   },
   fr: {
-    ofLink: "Mon OnlyFans", gateTitle: "Vérification de l'âge", gateText: "La page suivante contient du contenu pour adultes, réservé aux personnes de 18 ans et plus (ou l'âge de la majorité dans ton pays).", gateYes: "J'ai 18 ans ou plus — continuer", gateNo: "J'ai moins de 18 ans / Annuler",
+    ofLink: "Mon OnlyFans", gateTitle: "Vérification de l'âge", gateText: "La page suivante contient du contenu pour adultes, réservé aux personnes de 18 ans et plus (ou l'âge de la majorité dans ton pays).", gateYes: "J'ai 18 ans ou plus — continuer", gateNo: "J'ai moins de 18 ans / Annuler", enterText: "Ce cours porte sur la gestion d'une activité de créatrice de contenu adulte et contient des photos d'exemple suggestives. Il est réservé aux personnes de 18 ans et plus (ou l'âge de la majorité dans ton pays).", enterYes: "J'ai 18 ans ou plus — entrer", enterNo: "J'ai moins de 18 ans / Quitter",
     kicker: "★ Avec bunnybrownie · top 0,01 % mondial ★", logo: "Créatrice Adulte", logoSub: "Formation OnlyFans", start: "▶ COMMENCER",
     menuTitle: "Choisir une leçon", menuHint: "Choisis une leçon pour commencer ♡", name: "bunnybrownie ♡", noVoice: "🎙️ Voix pas encore générée — mode sous-titres",
     end: "C'est la fin de la formation — merci d'avoir appris avec moi. À bientôt en ligne ♡", bio: "📝 Modèle de bio",

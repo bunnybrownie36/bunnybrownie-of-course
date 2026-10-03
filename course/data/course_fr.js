@@ -1829,7 +1829,7 @@ window.COURSES["fr"] = {
          {
           "src": "fill_bad",
           "tag": "bad",
-          "cap": "Trop petite, trop d'espace"
+          "cap": "Bras et genou trop près · déformé"
          }
         ]
        }
@@ -2313,7 +2313,7 @@ window.COURSES["fr"] = {
          {
           "src": "angle_low",
           "tag": "",
-          "cap": "Contre-plongée · jambes plus longues"
+          "cap": "Pose au sol · vue d'en haut"
          },
          {
           "src": "angle_close",
@@ -2323,7 +2323,7 @@ window.COURSES["fr"] = {
          {
           "src": "angle_side",
           "tag": "",
-          "cap": "Profil + espace"
+          "cap": "Hauteur des yeux · lunettes"
          }
         ]
        }
