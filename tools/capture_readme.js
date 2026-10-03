@@ -60,7 +60,7 @@ async function still(page, name) {
     defaultViewport: { width: 1280, height: 720, deviceScaleFactor: 1 },
   });
   const page = await browser.newPage();
-  await page.evaluateOnNewDocument(() => { try { localStorage.clear(); localStorage.setItem("ofc.adult", "true"); } catch (e) {} }); // 已確認 18+，錄影時不跳年齡確認
+  await page.evaluateOnNewDocument(() => { try { localStorage.clear(); localStorage.setItem("ofc.adult", "true"); localStorage.setItem("ofc.introSeen", "true"); } catch (e) {} }); // 錄影時跳過年齡確認與介紹影片
 
   // 1) 標題 → 選單 → 開始上課
   await open(page, "zh-Hant");

@@ -15,3 +15,6 @@ __pycache__/
 # 真實照片原檔（處理後的 600x900 版本才會進 course/img/photos）
 assets/real-photos/
 assets/photo-replacement/
+
+# 介紹影片原始檔（剪好的版本才會進 course/video）
+assets/intro-video/

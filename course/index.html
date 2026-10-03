@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#1c0f24">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>大人的自媒體</title>
-<link rel="stylesheet" href="style.css?v=20261014">
+<link rel="stylesheet" href="style.css?v=20261015">
 </head>
 <body>
 <div id="app">
@@ -26,6 +26,15 @@
       <button class="px-btn small lang-btn lang-corner">EN</button>
     </section>
 
+    <!-- 開場介紹影片 -->
+    <section id="intro-screen" class="screen">
+      <video id="intro-video" playsinline preload="none"></video>
+      <div class="intro-nametag"><b>bunnybrownie ♡</b><span class="intro-tag-sub"></span></div>
+      <div class="intro-sub" aria-live="polite"></div>
+      <button class="px-btn intro-skip" id="intro-skip">Skip ▶▶</button>
+      <button class="intro-tap" id="intro-tap" hidden aria-label="Play">▶</button>
+    </section>
+
     <!-- 章節選單 -->
     <section id="menu-screen" class="screen">
       <div class="bg" style="background-image:url(img/bg_title.jpg)"></div>
@@ -36,6 +45,7 @@
             <div class="menu-title">選擇章節</div>
             <div class="menu-hint">點任何一節開始上課 ♡</div>
           </div>
+          <button class="px-btn small intro-replay" id="btn-intro">🎬</button>
         </div>
         <div id="menu-list"></div>
       </div>
@@ -105,18 +115,19 @@
     fit(); addEventListener("resize", fit);
   })();
 </script>
-<script src="data/script.js?v=20261014"></script>
-<script src="data/script_m3_8.js?v=20261014"></script>
-<script src="data/script_en.js?v=20261014"></script>
-<script src="data/script_en_m3_8.js?v=20261014"></script>
-<script src="data/course_zh-Hans.js?v=20261014"></script>
-<script src="data/course_es.js?v=20261014"></script>
-<script src="data/course_pt.js?v=20261014"></script>
-<script src="data/course_ja.js?v=20261014"></script>
-<script src="data/course_de.js?v=20261014"></script>
-<script src="data/course_fr.js?v=20261014"></script>
-<script src="data/ui.js?v=20261014"></script>
-<script src="data/voice.js?v=20261014"></script>
-<script src="player.js?v=20261014"></script>
+<script src="data/script.js?v=20261015"></script>
+<script src="data/script_m3_8.js?v=20261015"></script>
+<script src="data/script_en.js?v=20261015"></script>
+<script src="data/script_en_m3_8.js?v=20261015"></script>
+<script src="data/course_zh-Hans.js?v=20261015"></script>
+<script src="data/course_es.js?v=20261015"></script>
+<script src="data/course_pt.js?v=20261015"></script>
+<script src="data/course_ja.js?v=20261015"></script>
+<script src="data/course_de.js?v=20261015"></script>
+<script src="data/course_fr.js?v=20261015"></script>
+<script src="data/ui.js?v=20261015"></script>
+<script src="data/intro.js?v=20261015"></script>
+<script src="data/voice.js?v=20261015"></script>
+<script src="player.js?v=20261015"></script>
 </body>
 </html>

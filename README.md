@@ -123,6 +123,7 @@ Visitors confirm they are 18+ the first time they enter the course, and again be
 ## ▶️ 怎麼觀看 · How to watch
 
 - **線上 Online：** <https://bunnybrownie36.github.io/bunnybrownie-of-course/>
+- **🎬 開場影片 Intro video：** 第一次進入課程會先播我本人的介紹影片（中文／英文，含 8 種語言字幕，手機直拿會播直式版本），可隨時按「跳過」，之後也能在章節選單重播。A short intro from me plays the first time (skippable, replay from the menu).
 - **📱 手機／平板 Mobile & tablet：** 直接用手機瀏覽器打開同一個網址即可；直拿是直式版面、橫拿是寬螢幕版面，按鈕都放大成好點的尺寸。Works on phones and tablets in both portrait and landscape.
 - **離線 Offline：** 下載後直接用瀏覽器打開 `course/index.html`
 - 鍵盤：`空白鍵` 播放／暫停、`←` `→` 上一句／下一句

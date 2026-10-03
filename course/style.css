@@ -569,3 +569,36 @@ html, body { touch-action: manipulation; -webkit-text-size-adjust: 100%; overscr
 #stage.portrait .b-photos.n2 { grid-template-columns: repeat(2, min(280px, calc((var(--stage-h, 1280px) - 760px - 140px) * 0.667))); }
 #stage.portrait .b-photos.n3 { grid-template-columns: repeat(3, 190px); }
 #stage.portrait .b-photos.n3 .ph { max-height: min(285px, calc(var(--stage-h, 1280px) - 760px - 140px)); }
+
+/* ---------- 開場介紹影片 ---------- */
+#intro-screen { background: #000; }
+#intro-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+.intro-sub {
+  position: absolute; left: 50%; bottom: 52px; transform: translateX(-50%);
+  max-width: 86%; width: max-content; padding: 8px 20px;
+  background: rgba(28, 15, 36, 0.74); color: #fff; border-radius: 6px;
+  font-size: 30px; line-height: 1.4; text-align: center; pointer-events: none;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.intro-sub:empty { display: none; }
+.intro-nametag {
+  position: absolute; left: 40px; bottom: 150px; padding: 10px 18px;
+  background: var(--pink); color: #fff; border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink);
+  display: flex; flex-direction: column; gap: 2px; pointer-events: none;
+  opacity: 0; transform: translateX(-24px); transition: opacity .35s, transform .35s;
+}
+.intro-nametag.show { opacity: 1; transform: none; }
+.intro-nametag b { font-size: 30px; font-weight: normal; }
+.intro-nametag span { font-size: 18px; color: #fff4f8; }
+.intro-skip { position: absolute; right: 24px; top: 24px; font-size: 20px; padding: 8px 16px; opacity: .92; }
+.intro-tap {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 120px; height: 120px; border-radius: 50%; border: 4px solid #fff;
+  background: rgba(255, 143, 184, 0.85); color: #fff; font-size: 52px; cursor: pointer;
+}
+.intro-replay { margin-left: auto; white-space: nowrap; }
+/* 直式：影片填滿整個直式舞台（較長的手機左右會裁掉一點） */
+#stage.portrait #intro-video { object-fit: cover; }
+#stage.portrait .intro-sub { bottom: 170px; font-size: 32px; max-width: 92%; }
+#stage.portrait .intro-nametag { left: 24px; bottom: 340px; }
+#stage.portrait .intro-skip { top: 28px; right: 20px; font-size: 24px; }

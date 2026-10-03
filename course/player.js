@@ -88,6 +88,8 @@
     document.querySelectorAll(".lang-btn").forEach((b) => { b.textContent = "🌐 " + LANG.short; b.title = T.language; });
     document.querySelectorAll(".of-label").forEach((e) => e.textContent = T.ofLink);
     set("#gate-title", T.gateTitle); set("#gate-text", T.gateText); set("#gate-yes", T.gateYes); set("#gate-no", T.gateNo);
+    set("#intro-skip", T.introSkip); set("#btn-intro", T.introReplay); set(".intro-tag-sub", T.introTag);
+    $("#btn-intro").hidden = !window.INTRO;
     $("#no-voice-note").hidden = Object.keys(VOICE).length > 0;
   }
   loadLang();
@@ -212,9 +214,11 @@
     unlockAudio();
     ac = ac || new (window.AudioContext || window.webkitAudioContext)();
     sfx("select");
+    if (window.INTRO && !store.get("introSeen")) return playIntro(toMenu); // 第一次進來先看介紹影片
     playBgm("title");
     wipe(() => { buildMenu(); show("menu-screen"); });
   }
+  function toMenu() { playBgm("title"); buildMenu(); show("menu-screen"); }
   function buildMenu() {
     const done = store.get("done", {});
     const list = $("#menu-list"); list.innerHTML = "";
@@ -443,6 +447,64 @@
     playLine(+(m[2] || 0));
   }
   addEventListener("hashchange", fromHash);
+
+  // ---------- 開場介紹影片 ----------
+  // 中文語系播中文影片，其他語系播英文影片（字幕為該語言）；手機直拿時改播直式版本。
+  const introVid = $("#intro-video"), introSub = $(".intro-sub"), introTagEl = $(".intro-nametag");
+  let introThen = null, introCues = [], introTag = [0, 0], introRaf = 0;
+  function playIntro(then) {
+    const base = lang.startsWith("zh") ? "intro_zh" : "intro_en";
+    const key = stage.classList.contains("portrait") && INTRO.videos[base + "_portrait"] ? base + "_portrait" : base;
+    const v = INTRO.videos[key];
+    introThen = then;
+    introCues = ((INTRO.subs[lang] || INTRO.subs.en)[key]) || [];
+    introTag = v.nametag || [0, 0];
+    introSub.textContent = "";
+    introTagEl.classList.remove("show");
+    $("#intro-tap").hidden = true;
+    bgm.pause();
+    introVid.muted = MUTE;
+    introVid.poster = v.poster;
+    introVid.src = v.src;
+    show("intro-screen");
+    // 在點擊事件裡直接呼叫 play()，iOS 才允許有聲播放
+    introVid.play().catch(() => { $("#intro-tap").hidden = false; });
+    cancelAnimationFrame(introRaf);
+    introRaf = requestAnimationFrame(introTick);
+  }
+  function introTick() {
+    if (!introThen) return;
+    const t = introVid.currentTime;
+    const cue = introCues.find((c) => t >= c[0] && t < c[1]);
+    const text = cue ? cue[2] : "";
+    if (introSub.textContent !== text) introSub.textContent = text;
+    introTagEl.classList.toggle("show", t >= introTag[0] && t < introTag[1]);
+    introRaf = requestAnimationFrame(introTick);
+  }
+  function endIntro() {
+    if (!introThen) return;
+    const then = introThen;
+    introThen = null;
+    cancelAnimationFrame(introRaf);
+    store.set("introSeen", true);
+    introVid.pause();
+    introVid.removeAttribute("src");
+    introVid.load();
+    sfx("select");
+    wipe(then);
+  }
+  introVid.onended = endIntro;
+  introVid.onpause = () => { if (introThen && !introVid.ended) $("#intro-tap").hidden = false; };
+  introVid.onplay = () => { $("#intro-tap").hidden = true; };
+  $("#intro-skip").onclick = endIntro;
+  $("#intro-tap").onclick = () => { $("#intro-tap").hidden = true; introVid.play().catch(() => {}); };
+  introVid.onclick = () => { if (introVid.paused) introVid.play().catch(() => {}); else introVid.pause(); };
+  addEventListener("keydown", (e) => {
+    if (!introThen) return;
+    if (e.key === "Escape" || e.key === "Enter") { e.preventDefault(); endIntro(); }
+    else if (e.key === " ") { e.preventDefault(); introVid.onclick(); }
+  });
+  $("#btn-intro").onclick = () => { sfx("select"); playIntro(toMenu); };
 
   // ---------- OnlyFans 連結＋年齡確認 ----------
   const gate = $("#age-gate");
