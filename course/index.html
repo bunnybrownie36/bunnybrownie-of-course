@@ -6,14 +6,16 @@
 <meta name="theme-color" content="#1c0f24">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>大人的自媒體</title>
-<link rel="stylesheet" href="style.css?v=20261015">
+<link rel="preload" href="fonts/cubic11.sub.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/bg_title.webp" as="image">
+<link rel="stylesheet" href="style.css?v=20261016">
 </head>
 <body>
 <div id="app">
   <div id="stage">
     <!-- 標題畫面 -->
     <section id="title-screen" class="screen active">
-      <div class="bg" style="background-image:url(img/bg_title.jpg)"></div>
+      <div class="bg" style="background-image:url(img/bg_title.webp)"></div>
       <div class="sparkles"></div>
       <div class="title-wrap">
         <div class="title-kicker">★ 全球 0.01% 創作者親授 ★</div>
@@ -21,7 +23,10 @@
         <div class="logo-sub">OnlyFans 實戰課</div>
         <button class="of-link big" data-of>💗 <span class="of-label">我的 OnlyFans</span> @bunnybrownie</button>
         <img class="title-char" src="img/char_blink.png" alt="">
-        <button id="btn-start" class="px-btn big blink-cta" disabled>⏳ Loading…</button>
+        <div class="title-actions">
+          <button id="btn-start" class="px-btn big blink-cta" disabled>⏳ Loading…</button>
+          <button id="btn-chapters" class="px-btn chapters-btn" disabled>📖</button>
+        </div>
       </div>
       <button class="px-btn small lang-btn lang-corner">EN</button>
     </section>
@@ -37,13 +42,14 @@
 
     <!-- 章節選單 -->
     <section id="menu-screen" class="screen">
-      <div class="bg" style="background-image:url(img/bg_title.jpg)"></div>
+      <div class="bg" style="background-image:url(img/bg_title.webp)"></div>
       <div class="menu-panel px-box">
         <div class="menu-head">
           <img src="img/char_idle.png" class="menu-avatar" alt="">
           <div>
             <div class="menu-title">選擇章節</div>
             <div class="menu-hint">點任何一節開始上課 ♡</div>
+            <div class="menu-progress"><div class="menu-progress-track"><i id="menu-progress-bar"></i></div><span id="menu-progress-text"></span></div>
           </div>
           <button class="px-btn small intro-replay" id="btn-intro">🎬</button>
         </div>
@@ -115,19 +121,10 @@
     fit(); addEventListener("resize", fit);
   })();
 </script>
-<script src="data/script.js?v=20261015"></script>
-<script src="data/script_m3_8.js?v=20261015"></script>
-<script src="data/script_en.js?v=20261015"></script>
-<script src="data/script_en_m3_8.js?v=20261015"></script>
-<script src="data/course_zh-Hans.js?v=20261015"></script>
-<script src="data/course_es.js?v=20261015"></script>
-<script src="data/course_pt.js?v=20261015"></script>
-<script src="data/course_ja.js?v=20261015"></script>
-<script src="data/course_de.js?v=20261015"></script>
-<script src="data/course_fr.js?v=20261015"></script>
-<script src="data/ui.js?v=20261015"></script>
-<script src="data/intro.js?v=20261015"></script>
-<script src="data/voice.js?v=20261015"></script>
-<script src="player.js?v=20261015"></script>
+<script>window.ASSET_V = "20261016"; // 課程資料改由 player.js 依語言載入，只抓目前語言那一份</script>
+<script src="data/ui.js?v=20261016"></script>
+<script src="data/intro.js?v=20261016"></script>
+<script src="data/voice.js?v=20261016"></script>
+<script src="player.js?v=20261016"></script>
 </body>
 </html>

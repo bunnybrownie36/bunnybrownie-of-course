@@ -1,8 +1,10 @@
+/* 字型已裁成課程用到的字（tools/subset_fonts.py），完整版在 assets/fonts-src */
 @font-face {
   font-family: "Cubic11";
-  src: url("fonts/Cubic_11.woff2") format("woff2");
+  src: url("fonts/cubic11.sub.woff2") format("woff2");
   font-display: swap;
 }
+@font-face { font-family: "PixelSymbols"; src: url("fonts/pixel-symbols.sub.woff2") format("woff2"); font-display: swap; }
 
 :root {
   --ink: #3b2340;
@@ -401,12 +403,12 @@ img { image-rendering: pixelated; }
 .b-stats .v.long { font-size: 32px; line-height: 1.45; }
 
 /* ---------- v3：字型後援（簡中／日文／歐語重音） ---------- */
-@font-face { font-family: "FusionSC"; src: url("fonts/fusion-zh_hans.otf.woff2") format("woff2"); font-display: swap; }
-@font-face { font-family: "FusionJA"; src: url("fonts/fusion-ja.otf.woff2") format("woff2"); font-display: swap; }
-html, body { font-family: "Cubic11", "FusionSC", "FusionJA", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
-body[data-lang="zh-Hans"] { font-family: "FusionSC", "Cubic11", sans-serif; }
-body[data-lang="ja"] { font-family: "FusionJA", "Cubic11", sans-serif; }
-body[data-lang="es"], body[data-lang="pt"], body[data-lang="de"], body[data-lang="fr"] { font-family: "Cubic11", "FusionSC", sans-serif; }
+@font-face { font-family: "FusionSC"; src: url("fonts/fusion-sc.sub.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "FusionJA"; src: url("fonts/fusion-ja.sub.woff2") format("woff2"); font-display: swap; }
+/* 每個語系只下載自己需要的字型：简中、日文才會用到 Fusion */
+html, body { font-family: "Cubic11", "PixelSymbols", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+body[data-lang="zh-Hans"] { font-family: "FusionSC", "Cubic11", "PixelSymbols", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+body[data-lang="ja"] { font-family: "FusionJA", "Cubic11", "PixelSymbols", "Noto Sans JP", "Meiryo", sans-serif; }
 button, select { font-family: inherit; }
 
 /* ---------- 控制鍵圖示 ---------- */
@@ -602,3 +604,29 @@ html, body { touch-action: manipulation; -webkit-text-size-adjust: 100%; overscr
 #stage.portrait .intro-sub { bottom: 170px; font-size: 32px; max-width: 92%; }
 #stage.portrait .intro-nametag { left: 24px; bottom: 340px; }
 #stage.portrait .intro-skip { top: 28px; right: 20px; font-size: 24px; }
+
+/* ---------- 標題按鈕：開始／繼續上課＋章節選單 ---------- */
+.title-actions { display: flex; flex-direction: row; align-items: center; gap: 14px; }
+#btn-start { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 300px; }
+#btn-start .cta-sub { font-size: 16px; opacity: .9; max-width: 420px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#btn-start:disabled { opacity: .75; cursor: progress; animation: none; }
+.chapters-btn { font-size: 20px; padding: 12px 18px; background: #fff; }
+.chapters-btn:disabled { opacity: .5; }
+#stage.portrait .title-actions { flex-direction: column; gap: 18px; margin-top: 10px; }
+#stage.portrait .chapters-btn { font-size: 24px; padding: 10px 26px; }
+#stage.portrait #btn-start .cta-sub { font-size: 20px; max-width: 560px; }
+
+/* ---------- 選單：總進度＋上次看到這裡 ---------- */
+.menu-head > div:nth-child(2) { flex: 1; min-width: 0; }
+.menu-progress { display: flex; align-items: center; gap: 10px; margin-top: 6px; font-size: 15px; color: var(--ink-soft); }
+.menu-progress-track { flex: 0 1 240px; height: 12px; border: 2px solid var(--ink); background: #fff; }
+.menu-progress-track i { display: block; height: 100%; background: var(--mint); }
+.menu-lesson.resume { outline: 3px solid var(--pink-deep); outline-offset: 2px; background: #fff0f6; position: relative; }
+.menu-lesson.resume::before {
+  content: attr(data-tag); position: absolute; top: -12px; right: 8px; padding: 1px 8px;
+  background: var(--pink-deep); color: #fff; font-size: 12px; border: 2px solid var(--ink);
+}
+#stage.portrait .menu-progress { font-size: 18px; }
+/* 選單標頭（標題＋進度）固定在面板頂端，捲動清單時不會不見 */
+.menu-head { position: sticky; top: -22px; z-index: 3; background: inherit; margin-top: -22px; padding-top: 22px; }
+#stage.portrait .menu-head { top: -20px; margin-top: -20px; padding-top: 20px; }

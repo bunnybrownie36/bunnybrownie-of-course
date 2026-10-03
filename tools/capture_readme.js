@@ -67,7 +67,7 @@ async function still(page, name) {
   await still(page, "title");
   await record(page, "hero", 9, async () => {
     await sleep(1800);
-    await page.click("#btn-start");
+    await page.click("#btn-chapters");
     await sleep(2200);
     await still(page, "menu");
     await page.evaluate(() => [...document.querySelectorAll(".menu-lesson")][1].click());

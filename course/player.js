@@ -1,4 +1,4 @@
-(() => {
+(async () => {
   "use strict";
   const VOICES = window.VOICE || {};
   const MUTE = /[?&]mute=1/.test(location.search); // 測試用：完全靜音
@@ -39,7 +39,26 @@
   // ---------- 語言 & 資料 ----------
   const UI = window.UI_STRINGS, LANGS = window.LANGS, COURSES = window.COURSES;
   const LEGACY = { zh: "zh-Hant", "zh-TW": "zh-Hant", "zh-HK": "zh-Hant", "zh-CN": "zh-Hans", "zh-SG": "zh-Hans" };
-  const available = (c) => LANGS.some((l) => l.code === c) && COURSES[c];
+  const available = (c) => LANGS.some((l) => l.code === c);
+  // 課程資料按語言載入：只下載目前語言那一份，切換語言時再補抓
+  const DATA_FILES = { "zh-Hant": ["data/script.js", "data/script_m3_8.js"], en: ["data/script_en.js", "data/script_en_m3_8.js"] };
+  const DATA_GLOBAL = { "zh-Hant": "COURSE", en: "COURSE_EN" };
+  const loadingLang = {};
+  function loadScript(src) {
+    return new Promise((res, rej) => {
+      const el = document.createElement("script");
+      el.src = `${src}?v=${window.ASSET_V || ""}`;
+      el.onload = res; el.onerror = () => rej(new Error(src));
+      document.head.appendChild(el);
+    });
+  }
+  function ensureLang(code) {
+    if (COURSES[code]) return Promise.resolve();
+    return loadingLang[code] = loadingLang[code] || (async () => {
+      for (const f of DATA_FILES[code] || [`data/course_${code}.js`]) await loadScript(f);
+      if (DATA_GLOBAL[code]) COURSES[code] = window[DATA_GLOBAL[code]];
+    })().catch((e) => { delete loadingLang[code]; throw e; });
+  }
   function detectLang() {
     const q = (location.search.match(/[?&]lang=([\w-]+)/) || [])[1];
     const cands = [q, store.get("lang"), ...(navigator.languages || [navigator.language || ""])];
@@ -65,22 +84,16 @@
   let C, LESSONS, VOICE, T, LANG;
   function loadLang() {
     LANG = LANGS.find((l) => l.code === lang);
-    C = filterRegion(COURSES[lang], LANG.region);
     // 語音目前只有中文與英文：中文語系用中文語音，其他語系一律播英文語音（字幕仍為該語言）
     VOICE = VOICES[lang.startsWith("zh") ? lang : "en"] || {};
     T = UI[lang] || UI.en;
-    LESSONS = [];
-    C.modules.forEach((m) => {
-      if (m.intro) LESSONS.push({ ...m.intro, id: `${m.no}.intro`, label: T.intro, title: m.title, kind: "intro", bg: m.intro.bg || m.bg, module: m });
-      m.lessons.forEach((l, i) => LESSONS.push({ ...l, label: `${m.no}.${i + 1}`, bg: l.bg || m.bg, module: m }));
-      if (m.outro) LESSONS.push({ ...m.outro, id: `${m.no}.outro`, label: T.outro, title: T.outroTitle, kind: "outro", bg: m.outro.bg || m.bg, module: m });
-    });
+    if (COURSES[lang]) buildLessons();
     document.documentElement.lang = lang;
     document.body.classList.toggle("lang-en", LANG.latin);
     document.body.dataset.lang = lang;
     document.title = T.title;
     const set = (sel, v) => { const e = $(sel); if (e) e.textContent = v; };
-    set(".title-kicker", T.kicker); set(".logo", T.logo); set(".logo-sub", T.logoSub); set("#btn-start", T.start);
+    set(".title-kicker", T.kicker); set(".logo", T.logo); set(".logo-sub", T.logoSub); set("#btn-chapters", T.chapters);
     set(".menu-title", T.menuTitle); set(".menu-hint", T.menuHint); set(".nameplate", T.name); set("#no-voice-note", T.noVoice);
     const tip = (sel, v) => { const e = $(sel); if (e) { e.title = v; e.setAttribute("aria-label", v); } };
     tip("#btn-prev", T.ctrl.prev); tip("#btn-play", T.ctrl.play); tip("#btn-next", T.ctrl.next);
@@ -91,6 +104,38 @@
     set("#intro-skip", T.introSkip); set("#btn-intro", T.introReplay); set(".intro-tag-sub", T.introTag);
     $("#btn-intro").hidden = !window.INTRO;
     $("#no-voice-note").hidden = Object.keys(VOICE).length > 0;
+    updateStartBtn();
+  }
+  function buildLessons() {
+    C = filterRegion(COURSES[lang], LANG.region);
+    LESSONS = [];
+    C.modules.forEach((m) => {
+      if (m.intro) LESSONS.push({ ...m.intro, id: `${m.no}.intro`, label: T.intro, title: m.title, kind: "intro", bg: m.intro.bg || m.bg, module: m });
+      m.lessons.forEach((l, i) => LESSONS.push({ ...l, label: `${m.no}.${i + 1}`, bg: l.bg || m.bg, module: m }));
+      if (m.outro) LESSONS.push({ ...m.outro, id: `${m.no}.outro`, label: T.outro, title: T.outroTitle, kind: "outro", bg: m.outro.bg || m.bg, module: m });
+    });
+  }
+  // 上次看到哪裡（每一句都會記錄）；換語言時課程 id 不變，句數不同就夾到範圍內
+  function resumePoint() {
+    const last = store.get("last", null);
+    if (!last || !LESSONS) return null;
+    const li = LESSONS.findIndex((l) => l.id === last.id);
+    if (li < 0) return null;
+    return { li, i: Math.max(0, Math.min(last.i || 0, LESSONS[li].lines.length - 1)) };
+  }
+  // 標題畫面主按鈕：第一次「開始上課」直接進第一課；看過的人顯示「繼續上課＋上次的課名」
+  function updateStartBtn() {
+    const b = $("#btn-start"), ch = $("#btn-chapters");
+    const ready = !!(LESSONS && COURSES[lang]);
+    b.disabled = ch.disabled = !ready;
+    if (!ready) { b.textContent = T.loading; return; }
+    const r = resumePoint();
+    if (!r) { b.textContent = T.start; return; }
+    const L = LESSONS[r.li], main = document.createElement("span"), sub = document.createElement("small");
+    main.textContent = T.cont;
+    sub.className = "cta-sub";
+    sub.textContent = `${L.label}　${L.kind ? L.module.title : L.title}`;
+    b.replaceChildren(main, sub);
   }
   loadLang();
 
@@ -99,7 +144,7 @@
   langMenu.id = "lang-menu"; langMenu.className = "px-box"; langMenu.hidden = true;
   stage.appendChild(langMenu);
   function openLangMenu(btn) {
-    langMenu.innerHTML = LANGS.filter((l) => COURSES[l.code]).map((l) =>
+    langMenu.innerHTML = LANGS.map((l) =>
       `<button class="lang-opt${l.code === lang ? " on" : ""}" data-code="${l.code}">${l.label}</button>`).join("");
     const r = btn.getBoundingClientRect(), sr = stage.getBoundingClientRect(), k = sr.width / 1280;
     langMenu.style.right = `${(sr.right - r.right) / k}px`;
@@ -112,8 +157,12 @@
     });
   }
   addEventListener("click", () => { langMenu.hidden = true; });
-  function switchLang(code) {
+  async function switchLang(code) {
     const cur = LESSONS && LESSONS[state.li] ? LESSONS[state.li].id : null;
+    if (!COURSES[code]) {
+      document.querySelectorAll(".lang-btn").forEach((b) => { b.textContent = "⏳"; });
+      try { await ensureLang(code); } catch (e) { loadLang(); return; }
+    }
     lang = code; store.set("lang", lang);
     loadLang();
     if ($("#menu-screen").classList.contains("active")) buildMenu();
@@ -131,7 +180,7 @@
   const stripTags = (t) => t.replace(/\[[^\]]*\]\s*/g, "").trim();
   const MOUTH = { talk: "talk_c", point: "point_c", cheer: "cheer_c", blink: "blink_c" };
   const EMOTE = { cheer: "✨", warn: "❗", think: "", point: "", talk: "", idle: "" };
-  const BG = Object.fromEntries(["room", "office", "studio", "city", "plan", "rooftop", "shop", "safe"].map((k) => [k, `img/bg_${k}.jpg`]));
+  const BG = Object.fromEntries(["room", "office", "studio", "city", "plan", "rooftop", "shop", "safe"].map((k) => [k, `img/bg_${k}.webp`]));
   const BGM = {
     title: "audio/bgm_title.mp3", room: "audio/bgm_room.mp3", office: "audio/bgm_office.mp3",
     studio: "audio/bgm_room.mp3", shop: "audio/bgm_room.mp3",
@@ -205,22 +254,44 @@
   }
 
   // ---------- 標題 & 選單 ----------
-  $("#btn-start").disabled = false; // 資料載入完成才可開始
-  $("#btn-start").onclick = () => {
-    if (!store.get("adult")) return openGate(null, "enter", start); // 第一次進課程先確認 18+
-    start();
-  };
-  function start() {
+  // 第一次進課程先確認 18+，確認後才執行
+  const adultOnly = (fn) => () => { if (!store.get("adult")) return openGate(null, "enter", fn); fn(); };
+  function wakeAudio() {
     unlockAudio();
     ac = ac || new (window.AudioContext || window.webkitAudioContext)();
     sfx("select");
-    if (window.INTRO && !store.get("introSeen")) return playIntro(toMenu); // 第一次進來先看介紹影片
-    playBgm("title");
-    wipe(() => { buildMenu(); show("menu-screen"); });
   }
-  function toMenu() { playBgm("title"); buildMenu(); show("menu-screen"); }
+  // 主按鈕：有進度就從上次那一句繼續，沒有就直接從第一課開始（不用先經過選單）
+  function start() {
+    wakeAudio();
+    const r = resumePoint();
+    startLesson(r ? r.li : 0, r ? r.i : 0);
+  }
+  function openMenu() {
+    wakeAudio();
+    playBgm("title");
+    wipe(toMenuNow);
+  }
+  $("#btn-start").onclick = adultOnly(start);
+  $("#btn-chapters").onclick = adultOnly(openMenu);
+  function toMenu() { playBgm("title"); toMenuNow(); }
+  function toMenuNow() {
+    buildMenu();
+    show("menu-screen");
+    // 捲到「上次看到這裡」：只捲選單面板本身（scrollIntoView 會連整個舞台一起捲）
+    const cur = $("#menu-list .menu-lesson.resume"), panel = $(".menu-panel");
+    panel.scrollTop = 0;
+    if (cur) {
+      const pr = panel.getBoundingClientRect(), er = cur.getBoundingClientRect(), k = pr.height / panel.offsetHeight;
+      panel.scrollTop = Math.max(0, (er.top - pr.top) / k - panel.clientHeight / 2 + cur.offsetHeight / 2);
+    }
+  }
   function buildMenu() {
     const done = store.get("done", {});
+    const r = resumePoint();
+    const n = LESSONS.filter((l) => done[l.id]).length;
+    $("#menu-progress-bar").style.width = `${Math.round(n / LESSONS.length * 100)}%`;
+    $("#menu-progress-text").textContent = T.progress.replace("{n}", n).replace("{t}", LESSONS.length);
     const list = $("#menu-list"); list.innerHTML = "";
     C.modules.forEach((m) => {
       const h = document.createElement("div"); h.className = "menu-module";
@@ -230,7 +301,8 @@
       LESSONS.forEach((l, li) => {
         if (l.module !== m) return;
         const b = document.createElement("button");
-        b.className = "menu-lesson" + (done[l.id] ? " done" : "") + (l.kind ? " " + l.kind : "");
+        b.className = "menu-lesson" + (done[l.id] ? " done" : "") + (l.kind ? " " + l.kind : "") + (r && r.li === li ? " resume" : "");
+        if (r && r.li === li) b.dataset.tag = T.resumeTag;
         const title = l.kind ? (l.kind === "intro" ? "✨ " : "🏁 ") + l.title : l.title;
         b.innerHTML = `<span class="no">${esc(l.label)}</span><span>${esc(title)}</span>`;
         b.onclick = () => { sfx("select"); startLesson(li); };
@@ -239,7 +311,7 @@
       list.appendChild(g);
     });
   }
-  $("#btn-menu").onclick = () => { stopLine(); sfx("select"); playBgm("title"); wipe(() => { buildMenu(); show("menu-screen"); }); };
+  $("#btn-menu").onclick = () => { stopLine(); sfx("select"); playBgm("title"); wipe(toMenuNow); };
 
   // ---------- 課堂播放 ----------
   const state = { li: 0, i: 0, playing: false, boardKey: null, boardType: null };
@@ -259,6 +331,7 @@
     const L = LESSONS[li];
     show("lesson-screen");
     $("#lesson-bg").style.backgroundImage = `url(${BG[L.bg]})`;
+    const nx = LESSONS[li + 1]; if (nx && BG[nx.bg]) new Image().src = BG[nx.bg]; // 預先載入下一課背景
     $("#hud-module").textContent = `MODULE ${L.module.no}｜${L.module.title}`;
     $("#hud-lesson").textContent = `${L.label} ${L.title}`;
     playBgm(L.bg);
@@ -306,6 +379,7 @@
     if (i >= L.lines.length) return finishLesson();
     if (i < 0) { if (state.li > 0) startLesson(state.li - 1, LESSONS[state.li - 1].lines.length - 1); return; }
     state.i = i; lineDone = false;
+    store.set("last", { id: L.id, i });
     const ln = L.lines[i];
     const text = stripTags(ln.tts);
 
@@ -437,7 +511,7 @@
   // 深連結：#2.1 或 #2.1-5 直接跳到某節某句
   function fromHash() {
     const m = location.hash.match(/^#(\d+\.(?:\d+|intro|outro))(?:-(\d+))?$/);
-    if (!m) return;
+    if (!m || !LESSONS) return;
     const li = LESSONS.findIndex((l) => l.id === m[1]);
     if (li < 0) return;
     if (!store.get("adult")) return openGate(null, "enter", fromHash); // 直接連到某一頁也要先確認 18+
@@ -677,5 +751,16 @@ All content on @username belongs to me. You may not use, copy, reproduce, distri
       it.classList.toggle("current", idx === focus);
     });
   }
+  // 介面已經先顯示；這裡才等目前語言的課程資料（只有一份）
+  try {
+    await ensureLang(lang);
+  } catch (e) {
+    $("#btn-start").textContent = "⚠️ Reload";
+    $("#btn-start").disabled = false;
+    $("#btn-start").onclick = () => location.reload();
+    return;
+  }
+  buildLessons();
+  updateStartBtn();
   fromHash();
 })();
