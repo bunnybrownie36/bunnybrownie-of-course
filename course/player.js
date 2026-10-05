@@ -61,7 +61,9 @@
   }
   function detectLang() {
     const q = (location.search.match(/[?&]lang=([\w-]+)/) || [])[1];
-    const cands = [q, store.get("lang"), ...(navigator.languages || [navigator.language || ""])];
+    // 預設一律英文；只有網址帶 ?lang= 或使用者自己在選單切換過（langPick）才換語言。
+    // 不再依瀏覽器語言自動判斷；舊版存的 "lang" 也不再採用，讓所有人重新從英文開始。
+    const cands = [q, store.get("langPick")];
     for (let c of cands) {
       if (!c) continue;
       c = LEGACY[c] || c;
@@ -163,7 +165,7 @@
       document.querySelectorAll(".lang-btn").forEach((b) => { b.textContent = "⏳"; });
       try { await ensureLang(code); } catch (e) { loadLang(); return; }
     }
-    lang = code; store.set("lang", lang);
+    lang = code; store.set("langPick", lang);
     loadLang();
     if ($("#menu-screen").classList.contains("active")) buildMenu();
     if ($("#lesson-screen").classList.contains("active")) {
