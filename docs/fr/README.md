@@ -4,7 +4,7 @@
 
 # Créatrice Adulte · Formation OnlyFans
 
-**Un cours interactif gratuit en pixel art par bunnybrownie, créatrice OnlyFans classée dans le top 0,01 % mondial**
+**Un cours interactif gratuit en pixel-art, créé par bunnybrownie, créatrice OnlyFans classée dans le top 0,01 % mondial**
 
 [English](../../README.md) | [繁體中文](../../docs/zh-Hant/README.md) | [简体中文](../../docs/zh-Hans/README.md) | [Español](../../docs/es/README.md) | [Português](../../docs/pt/README.md) | [日本語](../../docs/ja/README.md) | [Deutsch](../../docs/de/README.md) | **Français**
 
@@ -14,33 +14,33 @@
 
 <img src="../../docs/media/fr/hero.gif" width="720" alt="Title screen → chapters → first lesson">
 
-**💗 Mon OnlyFans (18+) : [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**
+**▶ [Commencer le cours gratuit](https://bunnybrownie36.github.io/bunnybrownie-of-course/)** · 💗 ma page (18+) est liée à l'intérieur du cours
 
 </div>
 
-> 🔞 **Réservé aux adultes (18+).** Ce cours porte sur la gestion d'une activité de créatrice de contenu pour adultes. Il contient des photos suggestives de moi à titre d'exemple, et les visiteurs doivent confirmer leur âge avant d'y accéder. Il ne contient aucun contenu explicite.
+> 🔞 **Réservé aux adultes (18+).** Ce cours porte sur la gestion d'une activité de créatrice de contenu pour adultes. Il contient des photos suggestives de moi en exemple, et les visiteurs confirment leur âge avant d'y accéder. Il ne contient aucun contenu explicite.
 
 ---
 
 ## 💌 Pourquoi j'ai créé ce cours
 
-Bonjour, je suis **bunnybrownie**. Je suis passée de zéro au top 0,01 % mondial des créatrices OnlyFans. En chemin, j'ai perdu dix comptes de réseaux sociaux à cause de bannissements, je me suis retrouvée bloquée sur des paiements, et j'ai tourné beaucoup de contenu qui ne s'est jamais vendu. Ce que j'ai appris, c'est que la plupart des créatrices ne manquent pas d'effort — elles manquent d'un **système**.
+Bonjour, je suis **bunnybrownie**. Je suis partie de zéro pour atteindre le top 0,01 % mondial des créatrices OnlyFans. En chemin, j'ai perdu dix comptes sur les réseaux sociaux à cause de bannissements, j'ai été bloquée sur des paiements, et j'ai tourné beaucoup de contenu qui ne s'est jamais vendu. Ce que j'ai appris, c'est que la plupart des créatrices ne manquent pas d'efforts — elles manquent d'un **système**.
 
-J'ai donc transformé le système exact que j'utilise en ce cours, et je l'ai rendu gratuit. J'espère qu'il vous fera gagner du temps et qu'il vous aidera à construire quelque chose de sûr et durable. Vous voulez voir ce système en action ? Venez me retrouver sur [OnlyFans](https://onlyfans.com/bunnybrownie) (réservé aux 18+).
+J'ai donc transformé le système exact que j'utilise en ce cours, et je l'ai rendu gratuit. J'espère qu'il vous évitera quelques détours et vous aidera à construire quelque chose de sûr et durable. Vous voulez voir le système en action ? Vous trouverez un lien vers ma page à l'intérieur du cours (réservé aux 18+).
 
 ---
 
-## 🎬 Un aperçu
+## 🎬 Un petit aperçu
 
 <table>
 <tr>
 <td width="50%" valign="top">
 <img src="../../docs/media/fr/lesson.gif" alt="Lesson screen">
-<br><b>Hôtesse en pixel art + tableaux blancs animés</b><br>Narration vocale, sous-titres en machine à écrire, et points clés qui apparaissent un par un.
+<br><b>Hôte en pixel-art + tableaux blancs animés</b><br>Narration vocale, sous-titres en machine à écrire, et points clés qui apparaissent un par un.
 </td>
 <td width="50%" valign="top">
 <img src="../../docs/media/fr/photos.gif" alt="Real photo examples">
-<br><b>Exemples de vraies photos</b><br>Lumière, cadrage, taille du sujet et angles de caméra — comparatifs à faire / à éviter, photographiés par moi.
+<br><b>De vraies photos en exemple</b><br>Lumière, cadrage, taille du sujet et angles de caméra — comparaisons à faire / à éviter, photographiées par moi-même.
 </td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ J'ai donc transformé le système exact que j'utilise en ce cours, et je l'ai re
 </td>
 <td width="50%" valign="top">
 <img src="../../docs/media/shared/languages.gif" alt="Switching between 8 languages">
-<br><b>8 langues, un seul clic</b><br>Changez de langue à tout moment — la leçon garde sa place.
+<br><b>8 langues, en un clic</b><br>Changez de langue à tout moment — la leçon garde sa place.
 </td>
 </tr>
 </table>
@@ -79,9 +79,9 @@ J'ai donc transformé le système exact que j'utilise en ce cours, et je l'ai re
 <td><img src="../../docs/media/fr/week.jpg" alt="Weekly plan"></td>
 </tr>
 <tr>
-<td align="center"><sub>Des données réelles, avec sources</sub></td>
-<td align="center"><sub>Tarification par paliers : 100 fans identiques, 56 % de revenus en plus</sub></td>
-<td align="center"><sub>Un planning hebdomadaire que vous pouvez reproduire</sub></td>
+<td align="center"><sub>De vraies données, avec sources</sub></td>
+<td align="center"><sub>Tarification par paliers : mêmes 100 fans, 56 % de revenus en plus</sub></td>
+<td align="center"><sub>Un plan hebdomadaire que vous pouvez reproduire</sub></td>
 </tr>
 <tr>
 <td><img src="../../docs/media/fr/angles.jpg" alt="Camera angle examples"></td>
@@ -90,7 +90,7 @@ J'ai donc transformé le système exact que j'utilise en ce cours, et je l'ai re
 </tr>
 <tr>
 <td align="center"><sub>Menu des angles de caméra avec de vraies photos</sub></td>
-<td align="center"><sub>Les 10 comptes que j'ai perdus — et la bonne mentalité à adopter</sub></td>
+<td align="center"><sub>Les 10 comptes que j'ai perdus — et le bon état d'esprit</sub></td>
 <td align="center"><sub>Menu des chapitres avec votre progression</sub></td>
 </tr>
 </table>
@@ -104,11 +104,11 @@ J'ai donc transformé le système exact que j'utilise en ce cours, et je l'ai re
 <td width="62%" valign="top">
 
 - 🎙️ **Ma vraie voix** narre chaque ligne (en chinois et en anglais), avec émotion — pas un robot.
-- 🌏 **8 langues** : sous-titres et tableaux blancs entièrement traduits ; contenu spécifique à chaque pays uniquement quand c'est pertinent.
-- 📱 **Téléphone, tablette et ordinateur** : une mise en page portrait dédiée quand vous tenez votre téléphone à la verticale.
-- ▶️ **Reprend où vous vous étiez arrêté(e)** : l'écran titre propose « Continuer » et reprend exactement à la bonne ligne.
+- 🌏 **8 langues** : sous-titres et tableaux blancs entièrement traduits ; contenu spécifique à un pays uniquement lorsque c'est pertinent.
+- 📱 **Téléphone, tablette et ordinateur** : une mise en page portrait dédiée lorsque vous tenez votre téléphone à la verticale.
+- ▶️ **Reprend là où vous vous êtes arrêté·e** : l'écran titre propose "Continuer" et reprend exactement à la bonne ligne.
 - ✅ **Listes de contrôle et calculateurs interactifs** qui mémorisent vos réponses.
-- 📊 **Des chiffres réels avec sources** sur chaque tableau de données.
+- 📊 **De vrais chiffres avec sources** sur chaque tableau de données.
 - ⚡ **Léger** : la première visite ne télécharge qu'environ 260 Ko.
 - 💸 **Gratuit**, sans inscription.
 
@@ -141,15 +141,15 @@ J'ai donc transformé le système exact que j'utilise en ce cours, et je l'ai re
 
 <img src="../../docs/media/fr/agegate.jpg" width="480" alt="Age check">
 
-La première fois que vous accédez au cours, il vous sera demandé de confirmer que vous avez 18 ans ou plus (vous ne serez interrogé(e) qu'une seule fois). Le lien OnlyFans présent sur chaque écran redemande confirmation avant de s'ouvrir.
+La première fois que vous entrez dans le cours, on vous demandera de confirmer que vous avez 18 ans ou plus (on ne vous le demande qu'une seule fois). Le lien vers ma page, présent sur chaque écran, demande à nouveau confirmation avant de s'ouvrir.
 
 ---
 
-## ▶️ Comment regarder
+## ▶️ Comment suivre le cours
 
 - **En ligne :** <https://bunnybrownie36.github.io/bunnybrownie-of-course/>
-- **📱 Téléphone / tablette :** ouvrez le même lien dans votre navigateur mobile — tenez-le à la verticale pour la mise en page portrait, ou tournez-le pour le format large.
-- **🎬 Vidéo d'introduction :** une courte vidéo de présentation de ma part est disponible depuis le menu des chapitres.
+- **📱 Téléphone / tablette :** ouvrez le même lien dans votre navigateur mobile — tenez-le à la verticale pour la mise en page portrait, ou tournez-le pour le format paysage.
+- **🎬 Vidéo d'introduction :** une courte intro de ma part est disponible depuis le menu des chapitres.
 - **Hors ligne :** téléchargez ce dépôt et ouvrez `course/index.html` dans votre navigateur.
 - **Clavier :** `Espace` lecture / pause, `←` `→` ligne précédente / suivante.
 
@@ -159,6 +159,6 @@ La première fois que vous accédez au cours, il vous sera demandé de confirmer
 
 <div align="center">
 
-**💗 [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)** (18+)
+**▶ [Commencer le cours gratuit](https://bunnybrownie36.github.io/bunnybrownie-of-course/)**
 
 </div>

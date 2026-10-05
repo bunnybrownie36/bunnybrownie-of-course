@@ -4,53 +4,53 @@
 
 # Adult Creator · OnlyFans-Praxiskurs
 
-**Ein kostenloser, interaktiver Pixel-Art-Kurs von bunnybrownie, einer OnlyFans-Creatorin aus den weltweiten Top 0,01 %**
+**Ein kostenloser, interaktiver Pixel-Art-Kurs von bunnybrownie, einer OnlyFans-Creatorin in den weltweiten Top 0,01 %**
 
 [English](../../README.md) | [繁體中文](../../docs/zh-Hant/README.md) | [简体中文](../../docs/zh-Hans/README.md) | [Español](../../docs/es/README.md) | [Português](../../docs/pt/README.md) | [日本語](../../docs/ja/README.md) | **Deutsch** | [Français](../../docs/fr/README.md)
 
-[![▶ Jetzt online spielen](https://img.shields.io/badge/▶_Play_online-free-ff8fb8?style=for-the-badge)](https://bunnybrownie36.github.io/bunnybrownie-of-course/)
-[![8 Sprachen](https://img.shields.io/badge/languages-8-b79cff?style=for-the-badge)](#languages)
+[![▶ Play online](https://img.shields.io/badge/▶_Play_online-free-ff8fb8?style=for-the-badge)](https://bunnybrownie36.github.io/bunnybrownie-of-course/)
+[![8 languages](https://img.shields.io/badge/languages-8-b79cff?style=for-the-badge)](#languages)
 [![18+](https://img.shields.io/badge/18%2B-adults_only-e0598e?style=for-the-badge)](#age-check)
 
 <img src="../../docs/media/de/hero.gif" width="720" alt="Title screen → chapters → first lesson">
 
-**💗 Mein OnlyFans (18+): [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**
+**▶ [Starte den kostenlosen Kurs](https://bunnybrownie36.github.io/bunnybrownie-of-course/)** · 💗 meine Seite (18+) ist im Kurs verlinkt
 
 </div>
 
-> 🔞 **Nur für Erwachsene (18+).** In diesem Kurs geht es darum, ein Business als Adult-Content-Creatorin aufzubauen. Er enthält anzügliche Beispielfotos von mir, und Besucherinnen und Besucher bestätigen ihr Alter, bevor sie den Kurs betreten. Er enthält kein explizites Material.
+> 🔞 **Nur für Erwachsene (18+).** In diesem Kurs geht es um den Aufbau eines Business als Creatorin für Erwachseneninhalte. Er enthält anzügliche Beispielfotos von mir, und Besucher*innen müssen vor dem Einstieg ihr Alter bestätigen. Er enthält keine expliziten Inhalte.
 
 ---
 
 ## 💌 Warum ich das gemacht habe
 
-Hi, ich bin **bunnybrownie**. Ich habe es von null auf die weltweiten Top 0,01 % der OnlyFans-Creator geschafft. Auf dem Weg dorthin habe ich zehn Social-Media-Accounts durch Sperrungen verloren, hing bei Auszahlungen fest und habe eine Menge Content gedreht, der sich nie verkauft hat. Was ich daraus gelernt habe: Den meisten Creatorinnen fehlt es nicht an Einsatz — ihnen fehlt ein **System**.
+Hi, ich bin **bunnybrownie**. Ich habe es von null auf die weltweiten Top 0,01 % der OnlyFans-Creator geschafft. Auf dem Weg dorthin habe ich zehn Social-Media-Konten durch Sperrungen verloren, hatte Probleme mit Auszahlungen und habe eine Menge Content gedreht, der sich nie verkauft hat. Was ich daraus gelernt habe: Den meisten Creatorn fehlt es nicht an Einsatz — sondern an einem **System**.
 
-Also habe ich genau das System, das ich selbst benutze, in diesen Kurs gepackt und ihn kostenlos gemacht. Ich hoffe, er erspart dir ein paar Umwege und hilft dir, dir etwas Sicheres und Nachhaltiges aufzubauen. Willst du das System in Aktion sehen? Komm mich auf [OnlyFans](https://onlyfans.com/bunnybrownie) besuchen (nur 18+).
+Also habe ich genau das System, das ich nutze, in diesen Kurs verpackt und ihn kostenlos gemacht. Ich hoffe, er erspart dir ein paar Umwege und hilft dir, etwas Sicheres und Nachhaltiges aufzubauen. Willst du das System in Aktion sehen? Im Kurs findest du einen Link zu meiner Seite (nur 18+).
 
 ---
 
-## 🎬 Schau mal rein
+## 🎬 Ein kleiner Einblick
 
 <table>
 <tr>
 <td width="50%" valign="top">
 <img src="../../docs/media/de/lesson.gif" alt="Lesson screen">
-<br><b>Pixel-Host + animierte Whiteboards</b><br>Sprachnarration, Untertitel im Schreibmaschinen-Stil und Kernpunkte, die nacheinander erscheinen.
+<br><b>Pixel-Host + animierte Whiteboards</b><br>Sprachliche Erzählung, Schreibmaschinen-Untertitel und Kernpunkte, die nach und nach erscheinen.
 </td>
 <td width="50%" valign="top">
 <img src="../../docs/media/de/photos.gif" alt="Real photo examples">
-<br><b>Echte Fotobeispiele</b><br>Licht, Bildausschnitt, Motivgröße und Kamerawinkel — Do's und Don'ts im direkten Vergleich, selbst fotografiert.
+<br><b>Echte Fotobeispiele</b><br>Licht, Bildausschnitt, Größe des Motivs und Kamerawinkel — Do & Don't im direkten Vergleich, von mir selbst fotografiert.
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <img src="../../docs/media/de/checklist.gif" alt="Interactive checklist">
-<br><b>Interaktive Checklisten</b><br>Hake Punkte ab und erhalte einen rot/gelb/grünen Readiness-Score. Deine Antworten werden gespeichert.
+<br><b>Interaktive Checklisten</b><br>Hake Punkte ab, während du vorankommst, und erhalte eine rot/gelb/grüne Bereitschafts-Punktzahl. Deine Antworten werden gespeichert.
 </td>
 <td width="50%" valign="top">
 <img src="../../docs/media/shared/languages.gif" alt="Switching between 8 languages">
-<br><b>8 Sprachen, ein Klick</b><br>Wechsle jederzeit die Sprache — die Lektion bleibt genau an deiner Stelle.
+<br><b>8 Sprachen, ein Klick</b><br>Wechsle jederzeit die Sprache — die Lektion merkt sich, wo du warst.
 </td>
 </tr>
 </table>
@@ -80,7 +80,7 @@ Also habe ich genau das System, das ich selbst benutze, in diesen Kurs gepackt u
 </tr>
 <tr>
 <td align="center"><sub>Echte Daten, mit Quellen</sub></td>
-<td align="center"><sub>Gestaffelte Preise: dieselben 100 Fans, 56 % mehr Umsatz</sub></td>
+<td align="center"><sub>Gestaffelte Preisgestaltung: gleiche 100 Fans, 56 % mehr Umsatz</sub></td>
 <td align="center"><sub>Ein Wochenplan zum Nachmachen</sub></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ Also habe ich genau das System, das ich selbst benutze, in diesen Kurs gepackt u
 </tr>
 <tr>
 <td align="center"><sub>Menü mit Kamerawinkeln und echten Fotos</sub></td>
-<td align="center"><sub>Die 10 Accounts, die ich verloren habe — und die richtige Einstellung dazu</sub></td>
+<td align="center"><sub>Die 10 Konten, die ich verloren habe — und die richtige Einstellung dazu</sub></td>
 <td align="center"><sub>Kapitelmenü mit deinem Fortschritt</sub></td>
 </tr>
 </table>
@@ -104,12 +104,12 @@ Also habe ich genau das System, das ich selbst benutze, in diesen Kurs gepackt u
 <td width="62%" valign="top">
 
 - 🎙️ **Meine echte Stimme** erzählt jede Zeile (Chinesisch und Englisch), mit Gefühl — kein Roboter.
-- 🌏 **8 Sprachen**: Untertitel und Whiteboards vollständig übersetzt; landesspezifische Inhalte nur dort, wo sie relevant sind.
+- 🌏 **8 Sprachen**: Untertitel und Whiteboards vollständig übersetzt; landesspezifische Inhalte nur, wo sie relevant sind.
 - 📱 **Handy, Tablet und Desktop**: ein eigenes Hochformat-Layout, wenn du dein Handy aufrecht hältst.
-- ▶️ **Macht da weiter, wo du aufgehört hast**: der Titelbildschirm bietet „Fortsetzen" und springt genau zur richtigen Zeile.
+- ▶️ **Setzt dort fort, wo du aufgehört hast**: der Titelbildschirm bietet "Fortsetzen" an und springt genau zur richtigen Zeile.
 - ✅ **Interaktive Checklisten und Rechner**, die sich deine Antworten merken.
-- 📊 **Echte Zahlen mit Quellen** auf jedem Datenboard.
-- ⚡ **Leichtgewichtig**: beim ersten Besuch werden nur etwa 260 KB geladen.
+- 📊 **Echte Zahlen mit Quellen** auf jeder Datentafel.
+- ⚡ **Leichtgewichtig**: Beim ersten Besuch werden nur etwa 260 KB geladen.
 - 💸 **Kostenlos**, keine Anmeldung nötig.
 
 </td>
@@ -141,24 +141,24 @@ Also habe ich genau das System, das ich selbst benutze, in diesen Kurs gepackt u
 
 <img src="../../docs/media/de/agegate.jpg" width="480" alt="Age check">
 
-Beim ersten Betreten des Kurses wirst du gebeten zu bestätigen, dass du 18 Jahre oder älter bist (das wird nur einmal gefragt). Der OnlyFans-Link auf jedem Bildschirm fragt noch einmal nach, bevor er sich öffnet.
+Beim ersten Einstieg in den Kurs wirst du gebeten zu bestätigen, dass du 18 Jahre oder älter bist (das wird nur einmal gefragt). Der Link zu meiner Seite auf jedem Bildschirm fragt vor dem Öffnen erneut nach.
 
 ---
 
-## ▶️ So schaust du den Kurs
+## ▶️ So schaust du zu
 
 - **Online:** <https://bunnybrownie36.github.io/bunnybrownie-of-course/>
-- **📱 Handy / Tablet:** öffne denselben Link in deinem mobilen Browser — halte es aufrecht für das Hochformat-Layout oder dreh es seitlich für die Breitbildansicht.
+- **📱 Handy / Tablet:** öffne denselben Link in deinem mobilen Browser — halte ihn aufrecht für das Hochformat-Layout oder quer für das Breitbildformat.
 - **🎬 Intro-Video:** ein kurzes Intro von mir findest du im Kapitelmenü.
 - **Offline:** lade dieses Repository herunter und öffne `course/index.html` in deinem Browser.
-- **Tastatur:** `Leertaste` Abspielen/Pause, `←` `→` vorherige/nächste Zeile.
+- **Tastatur:** `Leertaste` Play/Pause, `←` `→` vorherige/nächste Zeile.
 
 ### Hinweise
-- Dieser Kurs dient der allgemeinen Bildung und ist **keine Rechts-, Steuer- oder Finanzberatung**. Plattformregeln ändern sich häufig — prüfe immer die aktuellen Nutzungsbedingungen.
-- Stimme: Fish Audio · Musik: Google Lyria 3.5 · Illustrationen: GPT Image 2.5 · Beispielfotos: fotografiert von der Creatorin · Schriften: [Cubic 11](https://github.com/ACh-K/Cubic-11), [Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font) (SIL OFL 1.1)
+- Dieser Kurs dient der allgemeinen Bildung und ist **keine Rechts-, Steuer- oder Finanzberatung**. Plattformregeln ändern sich häufig — prüfe immer die aktuellen Bedingungen.
+- Stimme: Fish Audio · Musik: Google Lyria 3.5 · Illustrationen: GPT Image 2.5 · Beispielfotos: von der Creatorin selbst fotografiert · Schriften: [Cubic 11](https://github.com/ACh-K/Cubic-11), [Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font) (SIL OFL 1.1)
 
 <div align="center">
 
-**💗 [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)** (18+)
+**▶ [Starte den kostenlosen Kurs](https://bunnybrownie36.github.io/bunnybrownie-of-course/)**
 
 </div>

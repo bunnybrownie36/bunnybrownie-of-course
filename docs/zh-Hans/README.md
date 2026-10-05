@@ -4,7 +4,7 @@
 
 # 大人的自媒体：OnlyFans 实战课
 
-**由bunnybrownie——全球Top 0.01%的OnlyFans创作者——打造的免费像素风互动课程**
+**由全球前0.01%的OnlyFans创作者bunnybrownie倾心打造的免费像素风互动课程**
 
 [English](../../README.md) | [繁體中文](../../docs/zh-Hant/README.md) | **简体中文** | [Español](../../docs/es/README.md) | [Português](../../docs/pt/README.md) | [日本語](../../docs/ja/README.md) | [Deutsch](../../docs/de/README.md) | [Français](../../docs/fr/README.md)
 
@@ -12,45 +12,45 @@
 [![8 languages](https://img.shields.io/badge/languages-8-b79cff?style=for-the-badge)](#languages)
 [![18+](https://img.shields.io/badge/18%2B-adults_only-e0598e?style=for-the-badge)](#age-check)
 
-<img src="../../docs/media/zh-Hans/hero.gif" width="720" alt="Title screen → chapters → first lesson">
+<img src="../../docs/media/zh-Hans/hero.gif" width="720" alt="标题画面 → 章节 → 第一课">
 
-**💗 我的OnlyFans（18+）：[onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**
+**▶ [立即开始免费课程](https://bunnybrownie36.github.io/bunnybrownie-of-course/)** · 💗 我的主页（18+）链接就在课程内
 
 </div>
 
-> 🔞 **仅限18岁以上成人。** 本课程讲的是如何经营成人内容创作者的生意，其中包含一些我本人的性感示例照片，访客进入前需先确认年龄。课程本身不含露骨内容。
+> 🔞 **仅限成人（18+）。** 本课程讲述的是如何经营一门成人内容创作者的生意。其中包含我的部分性感示例照片，访客需先确认年龄才能进入。课程本身不含露骨内容。
 
 ---
 
 ## 💌 我为什么要做这个
 
-嗨，我是**bunnybrownie**。我从零起步，一路做到了全球Top 0.01%的OnlyFans创作者。这段路上，我有十个社交媒体账号被封，提现卡过关，也拍过一堆根本卖不出去的内容。我学到的一件事是：大多数创作者不缺努力，缺的是一套**系统**。
+大家好，我是**bunnybrownie**。我从零开始，一路做到了全球OnlyFans创作者的前0.01%。这一路上，我曾因平台封禁失去过十个社交媒体账号，被卡在收款环节动弹不得，也拍过很多最终根本卖不出去的内容。我学到的是：大多数创作者缺的不是努力，而是一套**系统**。
 
-所以我把自己一直在用的系统整理成了这门课程，并且免费公开。希望它能帮你少走一些弯路，帮你建立起安全、可持续的事业。想看看这套系统在实战中的样子？来[OnlyFans](https://onlyfans.com/bunnybrownie)找我吧（仅限18+）。
+所以我把自己正在用的这套系统原封不动地做成了这门课程，并且免费公开。希望它能帮你少走一些弯路，帮你搭建一份安全又可持续的事业。想看看这套系统实际运作的样子吗？课程里就有链接通向我的主页（仅限18+）。
 
 ---
 
-## 🎬 来看一看
+## 🎬 先来看看
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="../../docs/media/zh-Hans/lesson.gif" alt="Lesson screen">
-<br><b>像素主播＋动态白板</b><br>配有语音讲解、打字机式字幕，以及逐条浮现的要点。
+<img src="../../docs/media/zh-Hans/lesson.gif" alt="课程画面">
+<br><b>像素主持人 + 动态白板</b><br>真人语音讲解，打字机式字幕，重点内容逐条浮现。
 </td>
 <td width="50%" valign="top">
-<img src="../../docs/media/zh-Hans/photos.gif" alt="Real photo examples">
-<br><b>真实照片示例</b><br>光线、构图、主体大小与拍摄角度——正反对照并排展示，均由我亲自拍摄。
+<img src="../../docs/media/zh-Hans/photos.gif" alt="真实照片示例">
+<br><b>真实照片示例</b><br>光线、取景、主体大小与拍摄角度——正确与错误示范并排展示，均由我亲自拍摄。
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<img src="../../docs/media/zh-Hans/checklist.gif" alt="Interactive checklist">
-<br><b>互动清单</b><br>边学边勾选，获得红／黄／绿准备度评分，你的答案会被保存。
+<img src="../../docs/media/zh-Hans/checklist.gif" alt="互动清单">
+<br><b>互动检查清单</b><br>边学边勾选，自动生成红／黄／绿的准备度评分，你的答案会被保存下来。
 </td>
 <td width="50%" valign="top">
-<img src="../../docs/media/shared/languages.gif" alt="Switching between 8 languages">
-<br><b>8种语言，一键切换</b><br>随时切换语言，课程进度不受影响。
+<img src="../../docs/media/shared/languages.gif" alt="在8种语言之间切换">
+<br><b>8种语言，一键切换</b><br>随时切换语言，课程进度不会丢失。
 </td>
 </tr>
 </table>
@@ -59,7 +59,7 @@
 
 ## 🗺️ 课程地图
 
-<img src="../../docs/media/zh-Hans/map.jpg" width="720" alt="Course map">
+<img src="../../docs/media/zh-Hans/map.jpg" width="720" alt="课程地图">
 
 | # | 章节 | 你会学到 |
 |:-:|---|---|
@@ -74,48 +74,48 @@
 
 <table>
 <tr>
-<td><img src="../../docs/media/zh-Hans/stats.jpg" alt="Data board"></td>
-<td><img src="../../docs/media/zh-Hans/calc.jpg" alt="Tiered pricing calculator"></td>
-<td><img src="../../docs/media/zh-Hans/week.jpg" alt="Weekly plan"></td>
+<td><img src="../../docs/media/zh-Hans/stats.jpg" alt="数据看板"></td>
+<td><img src="../../docs/media/zh-Hans/calc.jpg" alt="阶梯定价计算器"></td>
+<td><img src="../../docs/media/zh-Hans/week.jpg" alt="每周计划"></td>
 </tr>
 <tr>
 <td align="center"><sub>真实数据，附来源</sub></td>
-<td align="center"><sub>阶梯定价：同样100位粉丝，收入多56%</sub></td>
-<td align="center"><sub>一份可直接照抄的每周计划</sub></td>
+<td align="center"><sub>阶梯定价：同样100位粉丝，收入多出56%</sub></td>
+<td align="center"><sub>一份可以直接套用的每周计划</sub></td>
 </tr>
 <tr>
-<td><img src="../../docs/media/zh-Hans/angles.jpg" alt="Camera angle examples"></td>
-<td><img src="../../docs/media/zh-Hans/bans.jpg" alt="Banned accounts"></td>
-<td><img src="../../docs/media/zh-Hans/menu.jpg" alt="Chapter menu"></td>
+<td><img src="../../docs/media/zh-Hans/angles.jpg" alt="拍摄角度示例"></td>
+<td><img src="../../docs/media/zh-Hans/bans.jpg" alt="被封禁的账号"></td>
+<td><img src="../../docs/media/zh-Hans/menu.jpg" alt="章节菜单"></td>
 </tr>
 <tr>
 <td align="center"><sub>附真实照片的拍摄角度菜单</sub></td>
-<td align="center"><sub>我失去的那10个账号——以及正确的心态</sub></td>
-<td align="center"><sub>带有你学习进度的章节菜单</sub></td>
+<td align="center"><sub>我失去的那10个账号——以及应有的正确心态</sub></td>
+<td align="center"><sub>带进度显示的章节菜单</sub></td>
 </tr>
 </table>
 
 ---
 
-## ✨ 特色功能
+## ✨ 功能特色
 
 <table>
 <tr>
 <td width="62%" valign="top">
 
-- 🎙️ **我的真实声音**为每一句台词配音（中文和英文），有情感，不是机器人念白。
-- 🌏 **8种语言**：字幕和白板内容全部翻译，针对特定国家的内容仅在适用时出现。
-- 📱 **手机、平板与桌面皆可用**：竖屏握持手机时会自动切换为专属的竖屏布局。
-- ▶️ **接续上次进度**：标题画面提供「继续」选项，可精确跳回上次停下的那一句。
-- ✅ **互动清单与计算器**，会记住你的答案。
-- 📊 每个数据板都附有**真实数据与来源**。
-- ⚡ **轻量级**：首次访问只需下载约260 KB。
+- 🎙️ **真人原声讲解**：每一句台词（中文与英文）都由我亲自配音，充满情感，而不是机械的朗读。
+- 🌏 **8种语言**：字幕与白板内容均完整翻译，仅在适用的情况下才呈现特定国家／地区的内容。
+- 📱 **手机、平板与电脑皆可用**：竖持手机时会自动切换为专属竖屏版式。
+- ▶️ **断点续学**：标题画面提供「继续」选项，可精准恢复到上次观看的那一句。
+- ✅ **互动检查清单与计算器**：会自动记住你的答案。
+- 📊 **真实数据，附来源**：每个数据看板都有出处可查。
+- ⚡ **轻量级**：初次访问仅需下载约260 KB。
 - 💸 **完全免费**，无需注册。
 
 </td>
 <td width="38%" valign="top" align="center">
-<img src="../../docs/media/zh-Hans/mobile.jpg" width="230" alt="Phone portrait layout">
-<br><sub>手机竖屏布局</sub>
+<img src="../../docs/media/zh-Hans/mobile.jpg" width="230" alt="手机竖屏版式">
+<br><sub>手机竖屏版式</sub>
 </td>
 </tr>
 </table>
@@ -126,12 +126,12 @@
 
 ## 🌏 8种语言
 
-| 语言 | 字幕 | 语音 |
+| 语言 | 字幕 | 配音 |
 |---|:-:|:-:|
-| 繁體中文（含台湾专属课程：文件、本地交流、台湾法律） | ✅ | 中文 |
+| 繁體中文（含台湾专属课程：文件资料、本地交流方式、台湾相关法规） | ✅ | 中文 |
 | 简体中文 | ✅ | 中文 |
-| English | ✅ | 英语 |
-| Español · Português · 日本語 · Deutsch · Français | ✅ | 英语 |
+| English | ✅ | 英文 |
+| Español · Português · 日本語 · Deutsch · Français | ✅ | 英文 |
 
 ---
 
@@ -139,26 +139,26 @@
 
 ## 🔞 年龄确认
 
-<img src="../../docs/media/zh-Hans/agegate.jpg" width="480" alt="Age check">
+<img src="../../docs/media/zh-Hans/agegate.jpg" width="480" alt="年龄确认">
 
-首次进入课程时，系统会请你确认已满18岁（只会询问一次）。每个画面上的OnlyFans链接在打开前也会再次询问确认。
+首次进入课程时，系统会要求你确认已满18岁（只会询问一次）。每个画面中通向我主页的链接，在打开前都会再次询问确认。
 
 ---
 
 ## ▶️ 如何观看
 
 - **在线观看：** <https://bunnybrownie36.github.io/bunnybrownie-of-course/>
-- **📱 手机／平板：** 用手机浏览器打开同一链接——竖直握持即为竖屏布局，横放则切换为宽屏布局。
-- **🎬 开场视频：** 章节菜单中有一段我本人出镜的简短开场视频。
-- **离线观看：** 下载本仓库后，在浏览器中打开`course/index.html`即可。
-- **键盘操作：** `空格键`播放／暂停，`←` `→`切换上一句／下一句。
+- **📱 手机／平板：** 在手机浏览器中打开同一链接——竖持可获得竖屏版式，横放则切换为宽屏版式。
+- **🎬 介绍视频：** 章节菜单中有一段我亲自录制的简短开场介绍。
+- **离线观看：** 下载本仓库后，在浏览器中打开 `course/index.html` 即可。
+- **键盘操作：** `Space` 播放／暂停，`←` `→` 上一句／下一句。
 
 ### 说明
-- 本课程为通识教育，**不构成法律、税务或财务方面的专业建议**。各平台规则经常变动，请务必以最新条款为准。
+- 本课程属于通识教育内容，**不构成法律、税务或财务方面的专业建议**。各平台规则时常变动，请务必以最新条款为准。
 - 配音：Fish Audio · 音乐：Google Lyria 3.5 · 插画：GPT Image 2.5 · 示例照片：由创作者本人拍摄 · 字体：[Cubic 11](https://github.com/ACh-K/Cubic-11)、[Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)（SIL OFL 1.1）
 
 <div align="center">
 
-**💗 [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**（18+）
+**▶ [立即开始免费课程](https://bunnybrownie36.github.io/bunnybrownie-of-course/)**
 
 </div>

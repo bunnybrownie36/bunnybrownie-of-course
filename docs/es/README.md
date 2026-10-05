@@ -1,56 +1,56 @@
 <div align="center">
 
-<img src="../../course/img/char_blink.png" width="120" alt="avatar pixel de bunnybrownie">
+<img src="../../course/img/char_blink.png" width="120" alt="bunnybrownie pixel avatar">
 
 # Creadora Adulta · Curso práctico de OnlyFans
 
-**Un curso interactivo gratuito en pixel art, creado por bunnybrownie, una creadora de OnlyFans del top global 0.01%**
+**Un curso interactivo gratuito en pixel art de bunnybrownie, creadora en el top global 0.01% de OnlyFans**
 
 [English](../../README.md) | [繁體中文](../../docs/zh-Hant/README.md) | [简体中文](../../docs/zh-Hans/README.md) | **Español** | [Português](../../docs/pt/README.md) | [日本語](../../docs/ja/README.md) | [Deutsch](../../docs/de/README.md) | [Français](../../docs/fr/README.md)
 
-[![▶ Jugar en línea](https://img.shields.io/badge/▶_Play_online-free-ff8fb8?style=for-the-badge)](https://bunnybrownie36.github.io/bunnybrownie-of-course/)
-[![8 idiomas](https://img.shields.io/badge/languages-8-b79cff?style=for-the-badge)](#languages)
+[![▶ Play online](https://img.shields.io/badge/▶_Play_online-free-ff8fb8?style=for-the-badge)](https://bunnybrownie36.github.io/bunnybrownie-of-course/)
+[![8 languages](https://img.shields.io/badge/languages-8-b79cff?style=for-the-badge)](#languages)
 [![18+](https://img.shields.io/badge/18%2B-adults_only-e0598e?style=for-the-badge)](#age-check)
 
-<img src="../../docs/media/es/hero.gif" width="720" alt="Pantalla de título → capítulos → primera lección">
+<img src="../../docs/media/es/hero.gif" width="720" alt="Title screen → chapters → first lesson">
 
-**💗 Mi OnlyFans (18+): [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**
+**▶ [Empieza el curso gratis](https://bunnybrownie36.github.io/bunnybrownie-of-course/)** · 💗 mi página (18+) está enlazada dentro del curso
 
 </div>
 
-> 🔞 **Solo para adultos (18+).** Este curso trata sobre cómo llevar un negocio de creación de contenido para adultos. Incluye fotos de ejemplo sugerentes mías, y las personas visitantes confirman su edad antes de entrar. No contiene material explícito.
+> 🔞 **Solo para adultos (18+).** Este curso trata sobre cómo llevar un negocio de contenido para adultos. Incluye fotos de ejemplo sugerentes de mí, y las personas que visitan confirman su edad antes de entrar. No contiene material explícito.
 
 ---
 
 ## 💌 Por qué hice esto
 
-Hola, soy **bunnybrownie**. Pasé de cero al top global 0.01% de creadoras de OnlyFans. En el camino perdí diez cuentas de redes sociales por bloqueos, me quedé atascada con los pagos, y grabé muchísimo contenido que nunca se vendió. Lo que aprendí es que a la mayoría de las creadoras no les falta esfuerzo, les falta un **sistema**.
+Hola, soy **bunnybrownie**. Pasé de cero al top global 0.01% de creadoras de OnlyFans. En el camino perdí diez cuentas de redes sociales por bloqueos, me quedé atascada con los pagos, y grabé muchísimo contenido que nunca vendí. Lo que aprendí es que a la mayoría de las creadoras no les falta esfuerzo: les falta un **sistema**.
 
-Así que convertí el sistema exacto que uso en este curso, y lo hice gratuito. Espero que te ahorre algunos desvíos y te ayude a construir algo seguro y sostenible. ¿Quieres ver el sistema en acción? Ven a buscarme en [OnlyFans](https://onlyfans.com/bunnybrownie) (solo 18+).
+Así que convertí el sistema exacto que uso en este curso, y lo hice gratis. Espero que te ahorre algunos desvíos y te ayude a construir algo seguro y sostenible. ¿Quieres ver el sistema en acción? Encontrarás un enlace a mi página dentro del curso (solo 18+).
 
 ---
 
-## 🎬 Échale un vistazo
+## 🎬 Un vistazo
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="../../docs/media/es/lesson.gif" alt="Pantalla de lección">
-<br><b>Anfitriona pixelada + pizarras animadas</b><br>Narración de voz, subtítulos tipo máquina de escribir, y puntos clave que aparecen uno por uno.
+<img src="../../docs/media/es/lesson.gif" alt="Lesson screen">
+<br><b>Anfitriona en pixel art + pizarras animadas</b><br>Narración con mi voz, subtítulos tipo máquina de escribir, y puntos clave que aparecen uno por uno.
 </td>
 <td width="50%" valign="top">
-<img src="../../docs/media/es/photos.gif" alt="Ejemplos de fotos reales">
-<br><b>Ejemplos de fotos reales</b><br>Luz, encuadre, tamaño del sujeto y ángulos de cámara — comparaciones de qué hacer y qué no, tomadas por mí.
+<img src="../../docs/media/es/photos.gif" alt="Real photo examples">
+<br><b>Ejemplos con fotos reales</b><br>Luz, encuadre, tamaño del sujeto y ángulos de cámara — comparaciones de qué sí / qué no, fotografiadas por mí.
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<img src="../../docs/media/es/checklist.gif" alt="Lista de verificación interactiva">
-<br><b>Listas de verificación interactivas</b><br>Marca los elementos a medida que avanzas y obtén una puntuación de preparación en rojo, amarillo o verde. Tus respuestas se guardan.
+<img src="../../docs/media/es/checklist.gif" alt="Interactive checklist">
+<br><b>Listas de verificación interactivas</b><br>Marca los puntos a medida que avanzas y obtén una puntuación de preparación en rojo / amarillo / verde. Tus respuestas se guardan.
 </td>
 <td width="50%" valign="top">
-<img src="../../docs/media/shared/languages.gif" alt="Cambiando entre 8 idiomas">
-<br><b>8 idiomas, un solo clic</b><br>Cambia de idioma en cualquier momento — la lección mantiene su lugar.
+<img src="../../docs/media/shared/languages.gif" alt="Switching between 8 languages">
+<br><b>8 idiomas, un solo clic</b><br>Cambia de idioma en cualquier momento — la lección guarda tu posición.
 </td>
 </tr>
 </table>
@@ -59,7 +59,7 @@ Así que convertí el sistema exacto que uso en este curso, y lo hice gratuito. 
 
 ## 🗺️ Mapa del curso
 
-<img src="../../docs/media/es/map.jpg" width="720" alt="Mapa del curso">
+<img src="../../docs/media/es/map.jpg" width="720" alt="Course map">
 
 | # | Módulo | Lo que aprenderás |
 |:-:|---|---|
@@ -74,19 +74,19 @@ Así que convertí el sistema exacto que uso en este curso, y lo hice gratuito. 
 
 <table>
 <tr>
-<td><img src="../../docs/media/es/stats.jpg" alt="Panel de datos"></td>
-<td><img src="../../docs/media/es/calc.jpg" alt="Calculadora de precios por niveles"></td>
-<td><img src="../../docs/media/es/week.jpg" alt="Plan semanal"></td>
+<td><img src="../../docs/media/es/stats.jpg" alt="Data board"></td>
+<td><img src="../../docs/media/es/calc.jpg" alt="Tiered pricing calculator"></td>
+<td><img src="../../docs/media/es/week.jpg" alt="Weekly plan"></td>
 </tr>
 <tr>
 <td align="center"><sub>Datos reales, con fuentes</sub></td>
-<td align="center"><sub>Precios por niveles: los mismos 100 fans, 56% más ingresos</sub></td>
+<td align="center"><sub>Precios por niveles: con los mismos 100 fans, 56% más de ingresos</sub></td>
 <td align="center"><sub>Un plan semanal que puedes copiar</sub></td>
 </tr>
 <tr>
-<td><img src="../../docs/media/es/angles.jpg" alt="Ejemplos de ángulos de cámara"></td>
-<td><img src="../../docs/media/es/bans.jpg" alt="Cuentas bloqueadas"></td>
-<td><img src="../../docs/media/es/menu.jpg" alt="Menú de capítulos"></td>
+<td><img src="../../docs/media/es/angles.jpg" alt="Camera angle examples"></td>
+<td><img src="../../docs/media/es/bans.jpg" alt="Banned accounts"></td>
+<td><img src="../../docs/media/es/menu.jpg" alt="Chapter menu"></td>
 </tr>
 <tr>
 <td align="center"><sub>Menú de ángulos de cámara con fotos reales</sub></td>
@@ -103,18 +103,18 @@ Así que convertí el sistema exacto que uso en este curso, y lo hice gratuito. 
 <tr>
 <td width="62%" valign="top">
 
-- 🎙️ **Mi voz real** narra cada línea (en chino e inglés), con emoción, no es un robot.
-- 🌏 **8 idiomas**: subtítulos y pizarras completamente traducidos; contenido específico por país solo donde aplica.
-- 📱 **Teléfono, tablet y escritorio**: un diseño vertical dedicado cuando sostienes tu teléfono en posición vertical.
-- ▶️ **Continúa donde lo dejaste**: la pantalla de título ofrece "Continuar" y reanuda exactamente en la misma línea.
+- 🎙️ **Mi voz real** narra cada línea (en chino e inglés), con emoción — no es un robot.
+- 🌏 **8 idiomas**: subtítulos y pizarras totalmente traducidos; contenido específico por país solo donde aplica.
+- 📱 **Móvil, tablet y escritorio**: un diseño vertical dedicado cuando sostienes tu teléfono en posición vertical.
+- ▶️ **Continúa donde lo dejaste**: la pantalla de inicio ofrece "Continuar" y reanuda en la línea exacta.
 - ✅ **Listas de verificación y calculadoras interactivas** que recuerdan tus respuestas.
 - 📊 **Números reales con fuentes** en cada panel de datos.
 - ⚡ **Ligero**: la primera visita descarga solo unos 260 KB.
-- 💸 **Gratuito**, sin necesidad de registrarte.
+- 💸 **Gratis**, sin necesidad de registrarte.
 
 </td>
 <td width="38%" valign="top" align="center">
-<img src="../../docs/media/es/mobile.jpg" width="230" alt="Diseño vertical en teléfono">
+<img src="../../docs/media/es/mobile.jpg" width="230" alt="Phone portrait layout">
 <br><sub>Diseño vertical en un teléfono</sub>
 </td>
 </tr>
@@ -128,7 +128,7 @@ Así que convertí el sistema exacto que uso en este curso, y lo hice gratuito. 
 
 | Idioma | Subtítulos | Voz |
 |---|:-:|:-:|
-| 繁體中文 (con lecciones específicas de Taiwán: documentos, intercambios locales, legislación de Taiwán) | ✅ | Chino |
+| 繁體中文 (con lecciones específicas de Taiwán: documentos, intercambios locales, ley taiwanesa) | ✅ | Chino |
 | 简体中文 | ✅ | Chino |
 | English | ✅ | Inglés |
 | Español · Português · 日本語 · Deutsch · Français | ✅ | Inglés |
@@ -139,26 +139,26 @@ Así que convertí el sistema exacto que uso en este curso, y lo hice gratuito. 
 
 ## 🔞 Verificación de edad
 
-<img src="../../docs/media/es/agegate.jpg" width="480" alt="Verificación de edad">
+<img src="../../docs/media/es/agegate.jpg" width="480" alt="Age check">
 
-La primera vez que entres al curso, se te pedirá confirmar que tienes 18 años o más (solo se te preguntará una vez). El enlace a OnlyFans en cada pantalla vuelve a preguntar antes de abrirse.
+La primera vez que entres al curso, se te pedirá confirmar que tienes 18 años o más (solo se te pregunta una vez). El enlace a mi página en cada pantalla vuelve a preguntar antes de abrirse.
 
 ---
 
 ## ▶️ Cómo verlo
 
 - **En línea:** <https://bunnybrownie36.github.io/bunnybrownie-of-course/>
-- **📱 Teléfono / tablet:** abre el mismo enlace en tu navegador móvil — sostenlo en vertical para el diseño en modo retrato, o gíralo de lado para pantalla ancha.
+- **📱 Móvil / tablet:** abre el mismo enlace en tu navegador móvil — sostenlo en vertical para el diseño de retrato, o gíralo de lado para pantalla ancha.
 - **🎬 Video de introducción:** un breve video de presentación mío está disponible desde el menú de capítulos.
 - **Sin conexión:** descarga este repositorio y abre `course/index.html` en tu navegador.
 - **Teclado:** `Espacio` reproducir / pausar, `←` `→` línea anterior / siguiente.
 
 ### Notas
-- Este curso es educación general y **no constituye asesoría legal, fiscal o financiera**. Las reglas de las plataformas cambian con frecuencia — revisa siempre los términos más recientes.
+- Este curso es educación general y **no es asesoría legal, fiscal ni financiera**. Las reglas de las plataformas cambian con frecuencia — revisa siempre los términos más recientes.
 - Voz: Fish Audio · Música: Google Lyria 3.5 · Ilustraciones: GPT Image 2.5 · Fotos de ejemplo: tomadas por la creadora · Fuentes: [Cubic 11](https://github.com/ACh-K/Cubic-11), [Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font) (SIL OFL 1.1)
 
 <div align="center">
 
-**💗 [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)** (18+)
+**▶ [Empieza el curso gratis](https://bunnybrownie36.github.io/bunnybrownie-of-course/)**
 
 </div>

@@ -1,65 +1,65 @@
 <div align="center">
 
-<img src="../../course/img/char_blink.png" width="120" alt="bunnybrownie pixel avatar">
+<img src="../../course/img/char_blink.png" width="120" alt="bunnybrownieのピクセルアバター">
 
 # 大人のメディア術 · OnlyFans 実践講座
 
-**bunnybrownieが贈る、無料のピクセルアート・インタラクティブ講座 — 世界トップ0.01%のOnlyFansクリエイターによる**
+**グローバルトップ0.01%のOnlyFansクリエイター、bunnybrownieによる無料のピクセルアート・インタラクティブ講座**
 
 [English](../../README.md) | [繁體中文](../../docs/zh-Hant/README.md) | [简体中文](../../docs/zh-Hans/README.md) | [Español](../../docs/es/README.md) | [Português](../../docs/pt/README.md) | **日本語** | [Deutsch](../../docs/de/README.md) | [Français](../../docs/fr/README.md)
 
-[![▶ Play online](https://img.shields.io/badge/▶_Play_online-free-ff8fb8?style=for-the-badge)](https://bunnybrownie36.github.io/bunnybrownie-of-course/)
-[![8 languages](https://img.shields.io/badge/languages-8-b79cff?style=for-the-badge)](#languages)
-[![18+](https://img.shields.io/badge/18%2B-adults_only-e0598e?style=for-the-badge)](#age-check)
+[![▶ オンラインでプレイ](https://img.shields.io/badge/▶_Play_online-free-ff8fb8?style=for-the-badge)](https://bunnybrownie36.github.io/bunnybrownie-of-course/)
+[![8言語対応](https://img.shields.io/badge/languages-8-b79cff?style=for-the-badge)](#languages)
+[![18歳以上](https://img.shields.io/badge/18%2B-adults_only-e0598e?style=for-the-badge)](#age-check)
 
-<img src="../../docs/media/ja/hero.gif" width="720" alt="Title screen → chapters → first lesson">
+<img src="../../docs/media/ja/hero.gif" width="720" alt="タイトル画面 → 章一覧 → 最初のレッスン">
 
-**💗 わたしのOnlyFans（18歳以上）：[onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**
+**▶ [無料講座をはじめる](https://bunnybrownie36.github.io/bunnybrownie-of-course/)** · 💗 私のページ（18歳以上）は講座の中にリンクがあります
 
 </div>
 
-> 🔞 **18歳以上限定。** この講座は、アダルトコンテンツ・クリエイタービジネスの運営についてのものです。わたし自身の示唆的なサンプル写真が含まれており、訪問者は入室前に年齢確認を行います。露骨な表現は含まれていません。
+> 🔞 **18歳以上の方限定です。** この講座はアダルトコンテンツ・クリエイタービジネスの運営についてのものです。私の示唆的なサンプル写真が含まれており、訪問者は入場前に年齢確認を行います。露骨な表現は含まれていません。
 
 ---
 
 ## 💌 この講座を作った理由
 
-こんにちは、**bunnybrownie**です。わたしはゼロから始めて、世界トップ0.01%のOnlyFansクリエイターになりました。その道のりで、10個ものSNSアカウントをBANで失い、支払いで行き詰まり、売れなかったコンテンツもたくさん撮影してきました。そこで学んだのは、ほとんどのクリエイターに足りないのは努力ではなく、**仕組み（システム）**だということです。
+こんにちは、**bunnybrownie**です。私はゼロから、OnlyFansクリエイターのグローバルトップ0.01%まで登りつめました。その道のりでは10個のソーシャルメディアアカウントが凍結され、支払いで足止めされ、売れなかったコンテンツも山ほど撮影しました。そこで学んだのは、ほとんどのクリエイターに足りないのは努力ではなく、**仕組み**だということです。
 
-だからこそ、わたしが実際に使っているシステムをそのままこの講座にして、無料で公開することにしました。これがあなたの遠回りを少しでも減らし、安全でサステナブルなビジネスを築く助けになれば嬉しいです。実際のシステムを見てみたい方は、[OnlyFans](https://onlyfans.com/bunnybrownie)（18歳以上限定）でわたしに会いに来てくださいね。
+だから私は、自分が実際に使っている仕組みをそのままこの講座にして、無料で公開しました。これがあなたの回り道を少しでも減らし、安全で持続可能なビジネスを築く助けになればと思います。この仕組みが実際どう動いているか見てみたい方は、講座の中に私のページへのリンクがあります（18歳以上限定）。
 
 ---
 
-## 🎬 ちょっと覗いてみてください
+## 🎬 ちょっと覗いてみる
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="../../docs/media/ja/lesson.gif" alt="Lesson screen">
-<br><b>ピクセルホスト＋アニメーションホワイトボード</b><br>音声ナレーション、タイプライター風字幕、そして一つずつ表示されるポイント。
+<img src="../../docs/media/ja/lesson.gif" alt="レッスン画面">
+<br><b>ピクセルホスト＋アニメーションホワイトボード</b><br>音声ナレーション、タイプライター字幕、ひとつずつ表示されるポイント。
 </td>
 <td width="50%" valign="top">
-<img src="../../docs/media/ja/photos.gif" alt="Real photo examples">
-<br><b>本物の写真サンプル</b><br>光、フレーミング、被写体のサイズ、カメラアングル — Do / Don'tを並べて、わたし自身が撮影しました。
+<img src="../../docs/media/ja/photos.gif" alt="実際の写真例">
+<br><b>実際の写真例</b><br>光、フレーミング、被写体のサイズ、カメラアングル — 私自身が撮影した、やるべき例とやってはいけない例を並べて紹介。
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<img src="../../docs/media/ja/checklist.gif" alt="Interactive checklist">
-<br><b>インタラクティブなチェックリスト</b><br>進めながら項目にチェックを入れると、赤・黄・緑の準備度スコアが表示されます。あなたの回答は保存されます。
+<img src="../../docs/media/ja/checklist.gif" alt="インタラクティブチェックリスト">
+<br><b>インタラクティブチェックリスト</b><br>進めながら項目にチェックを入れると、赤・黄・緑の準備度スコアが表示されます。あなたの回答は保存されます。
 </td>
 <td width="50%" valign="top">
-<img src="../../docs/media/shared/languages.gif" alt="Switching between 8 languages">
-<br><b>8言語対応、ワンクリックで切替</b><br>いつでも言語を切り替え可能 — レッスンの続きはそのまま維持されます。
+<img src="../../docs/media/shared/languages.gif" alt="8言語の切り替え">
+<br><b>8言語をワンクリックで切り替え</b><br>いつでも言語を切り替えられ、レッスンは途中の位置をそのまま保持します。
 </td>
 </tr>
 </table>
 
 ---
 
-## 🗺️ コースマップ
+## 🗺️ 講座マップ
 
-<img src="../../docs/media/ja/map.jpg" width="720" alt="Course map">
+<img src="../../docs/media/ja/map.jpg" width="720" alt="講座マップ">
 
 | # | モジュール | 学べること |
 |:-:|---|---|
@@ -74,24 +74,24 @@
 
 <table>
 <tr>
-<td><img src="../../docs/media/ja/stats.jpg" alt="Data board"></td>
-<td><img src="../../docs/media/ja/calc.jpg" alt="Tiered pricing calculator"></td>
-<td><img src="../../docs/media/ja/week.jpg" alt="Weekly plan"></td>
+<td><img src="../../docs/media/ja/stats.jpg" alt="データボード"></td>
+<td><img src="../../docs/media/ja/calc.jpg" alt="段階制価格計算ツール"></td>
+<td><img src="../../docs/media/ja/week.jpg" alt="週間プラン"></td>
 </tr>
 <tr>
-<td align="center"><sub>出典付きのリアルなデータ</sub></td>
-<td align="center"><sub>階層型プライシング：同じ100人のファンで収益56%アップ</sub></td>
+<td align="center"><sub>出典付きの実データ</sub></td>
+<td align="center"><sub>段階制価格設定：同じ100人のファンで収益56%増</sub></td>
 <td align="center"><sub>そのまま真似できる週間プラン</sub></td>
 </tr>
 <tr>
-<td><img src="../../docs/media/ja/angles.jpg" alt="Camera angle examples"></td>
-<td><img src="../../docs/media/ja/bans.jpg" alt="Banned accounts"></td>
-<td><img src="../../docs/media/ja/menu.jpg" alt="Chapter menu"></td>
+<td><img src="../../docs/media/ja/angles.jpg" alt="カメラアングルの例"></td>
+<td><img src="../../docs/media/ja/bans.jpg" alt="凍結されたアカウント"></td>
+<td><img src="../../docs/media/ja/menu.jpg" alt="章メニュー"></td>
 </tr>
 <tr>
-<td align="center"><sub>実際の写真付きカメラアングルメニュー</sub></td>
-<td align="center"><sub>わたしが失った10個のアカウント — そして正しいマインドセット</sub></td>
-<td align="center"><sub>進捗が見えるチャプターメニュー</sub></td>
+<td align="center"><sub>実際の写真つきカメラアングルメニュー</sub></td>
+<td align="center"><sub>私が失った10個のアカウント — そこから得た正しい心構え</sub></td>
+<td align="center"><sub>進捗が表示される章メニュー</sub></td>
 </tr>
 </table>
 
@@ -103,19 +103,19 @@
 <tr>
 <td width="62%" valign="top">
 
-- 🎙️ **わたし自身の声**がすべてのセリフをナレーション（中国語・英語）。ロボットではなく、感情のこもった声です。
-- 🌏 **8言語対応**：字幕とホワイトボードは完全に翻訳済み。該当する場合のみ国・地域別のコンテンツも。
-- 📱 **スマホ・タブレット・デスクトップ対応**：スマホを縦に持つと専用の縦型レイアウトに。
-- ▶️ **続きから再開**：タイトル画面に「Continue」が表示され、正確なセリフの位置から再開できます。
-- ✅ **インタラクティブなチェックリストと計算機**、回答は記憶されます。
-- 📊 **出典付きのリアルな数字**を、すべてのデータボードに掲載。
-- ⚡ **軽量設計**：初回訪問時のダウンロードはわずか約260KB。
-- 💸 **無料**、サインアップ不要。
+- 🎙️ **私自身の声**がすべてのセリフを感情を込めてナレーション（中国語・英語）、ロボット音声ではありません。
+- 🌏 **8言語対応**：字幕とホワイトボードは完全に翻訳済み、該当する場合のみ国別の内容を表示。
+- 📱 **スマホ、タブレット、PC対応**：スマホを縦に持つと専用の縦画面レイアウトになります。
+- ▶️ **続きから再生**：タイトル画面に「続ける」ボタンがあり、ちょうどそのセリフから再開できます。
+- ✅ **回答を記憶するインタラクティブなチェックリストと計算ツール**。
+- 📊 **すべてのデータボードに出典付きの実データ**。
+- ⚡ **軽量設計**：初回アクセス時のダウンロード量は約260KBのみ。
+- 💸 **無料**、登録不要。
 
 </td>
 <td width="38%" valign="top" align="center">
-<img src="../../docs/media/ja/mobile.jpg" width="230" alt="Phone portrait layout">
-<br><sub>スマホの縦型レイアウト</sub>
+<img src="../../docs/media/ja/mobile.jpg" width="230" alt="スマホの縦画面レイアウト">
+<br><sub>スマホでの縦画面レイアウト</sub>
 </td>
 </tr>
 </table>
@@ -128,7 +128,7 @@
 
 | 言語 | 字幕 | 音声 |
 |---|:-:|:-:|
-| 繁體中文（台湾限定レッスン付き：各種書類、現地取引所、台湾の法律） | ✅ | 中国語 |
+| 繁體中文（台湾向けレッスンあり：書類、現地取引、台湾の法律） | ✅ | 中国語 |
 | 简体中文 | ✅ | 中国語 |
 | English | ✅ | 英語 |
 | Español · Português · 日本語 · Deutsch · Français | ✅ | 英語 |
@@ -139,26 +139,26 @@
 
 ## 🔞 年齢確認
 
-<img src="../../docs/media/ja/agegate.jpg" width="480" alt="Age check">
+<img src="../../docs/media/ja/agegate.jpg" width="480" alt="年齢確認">
 
-講座に初めて入る際、18歳以上であることの確認を求められます（確認は一度のみです）。各画面にあるOnlyFansリンクは、開く前に再度確認が入ります。
+講座に初めて入るとき、18歳以上であることの確認が求められます（確認は一度だけです）。各画面にある私のページへのリンクを開く際にも、再度確認が行われます。
 
 ---
 
 ## ▶️ 視聴方法
 
 - **オンライン：** <https://bunnybrownie36.github.io/bunnybrownie-of-course/>
-- **📱 スマホ・タブレット：** 同じリンクをモバイルブラウザで開いてください — 縦向きで持つと縦型レイアウトに、横向きにするとワイドスクリーンになります。
-- **🎬 イントロ動画：** わたしからの短いイントロ動画は、チャプターメニューからご覧いただけます。
+- **📱 スマホ・タブレット：** 同じリンクをモバイルブラウザで開いてください — 縦に持てば縦画面レイアウト、横に向ければワイドスクリーンになります。
+- **🎬 イントロ動画：** 章メニューから、私からの短いイントロ動画を視聴できます。
 - **オフライン：** このリポジトリをダウンロードし、ブラウザで `course/index.html` を開いてください。
-- **キーボード操作：** `Space` で再生／一時停止、`←` `→` で前後のセリフに移動。
+- **キーボード操作：** `Space` 再生／一時停止、`←` `→` 前のセリフ／次のセリフ。
 
 ### 補足
-- この講座は一般的な教育コンテンツであり、**法律・税務・financial上のアドバイスではありません**。プラットフォームのルールは頻繁に変わるため、必ず最新の規約をご確認ください。
-- 音声：Fish Audio · 音楽：Google Lyria 3.5 · イラスト：GPT Image 2.5 · サンプル写真：クリエイター本人による撮影 · フォント：[Cubic 11](https://github.com/ACh-K/Cubic-11)、[Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)（SIL OFL 1.1）
+- この講座は一般的な教育コンテンツであり、**法律・税務・財務上のアドバイスではありません**。プラットフォームの規約はよく変わるので、常に最新の利用規約を確認してください。
+- 音声：Fish Audio ・音楽：Google Lyria 3.5 ・イラスト：GPT Image 2.5 ・サンプル写真：クリエイター本人が撮影 ・フォント：[Cubic 11](https://github.com/ACh-K/Cubic-11)、[Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)（SIL OFL 1.1）
 
 <div align="center">
 
-**💗 [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**（18歳以上限定）
+**▶ [無料講座をはじめる](https://bunnybrownie36.github.io/bunnybrownie-of-course/)**
 
 </div>

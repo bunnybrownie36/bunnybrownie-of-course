@@ -14,7 +14,7 @@
 
 <img src="docs/media/en/hero.gif" width="720" alt="Title screen → chapters → first lesson">
 
-**💗 My OnlyFans (18+): [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)**
+**▶ [Start the free course](https://bunnybrownie36.github.io/bunnybrownie-of-course/)** · 💗 my page (18+) is linked inside the course
 
 </div>
 
@@ -26,7 +26,7 @@
 
 Hi, I'm **bunnybrownie**. I went from zero to the global top 0.01% of OnlyFans creators. Along the way I lost ten social media accounts to bans, got stuck on payouts, and shot plenty of content that never sold. What I learned is that most creators don't lack effort — they lack a **system**.
 
-So I turned the exact system I use into this course, and made it free. I hope it saves you some detours and helps you build something safe and sustainable. Want to see the system in action? Come find me on [OnlyFans](https://onlyfans.com/bunnybrownie) (18+ only).
+So I turned the exact system I use into this course, and made it free. I hope it saves you some detours and helps you build something safe and sustainable. Want to see the system in action? You'll find a link to my page inside the course (18+ only).
 
 ---
 
@@ -141,7 +141,7 @@ So I turned the exact system I use into this course, and made it free. I hope it
 
 <img src="docs/media/en/agegate.jpg" width="480" alt="Age check">
 
-The first time you enter the course, you'll be asked to confirm that you are 18 or older (you're only asked once). The OnlyFans link on every screen asks again before it opens.
+The first time you enter the course, you'll be asked to confirm that you are 18 or older (you're only asked once). The link to my page on every screen asks again before it opens.
 
 ---
 
@@ -159,6 +159,6 @@ The first time you enter the course, you'll be asked to confirm that you are 18 
 
 <div align="center">
 
-**💗 [onlyfans.com/bunnybrownie](https://onlyfans.com/bunnybrownie)** (18+)
+**▶ [Start the free course](https://bunnybrownie36.github.io/bunnybrownie-of-course/)**
 
 </div>
