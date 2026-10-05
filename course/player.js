@@ -86,6 +86,7 @@
   // 網站上顯示的「OnlyFans」一律換成 BRAND（只改畫面文字；原始資料、語音檔與 OF 連結網址都不動）
   // 想改成文字版，例如 "exclusive website"，只要改這一行
   const BRAND = "🤍💙";
+  const OF_LABEL = "my exclusive website"; // 藍色連結按鈕的文字（所有語言都用這句），後面接 @bunnybrownie
   const debrand = (x) => typeof x === "string" ? x.replace(/onlyfans/gi, BRAND)
     : Array.isArray(x) ? x.map(debrand)
     : x && typeof x === "object" ? Object.fromEntries(Object.entries(x).map(([k, v]) => [k, debrand(v)])) : x;
@@ -108,7 +109,7 @@
     tip("#btn-prev", T.ctrl.prev); tip("#btn-play", T.ctrl.play); tip("#btn-next", T.ctrl.next);
     tip("#btn-auto", T.ctrl.auto); tip("#btn-bgm", T.ctrl.bgm); tip("#btn-voice", T.ctrl.voice); tip("#btn-menu", T.ctrl.menu);
     document.querySelectorAll(".lang-btn").forEach((b) => { b.textContent = "🌐 " + LANG.short; b.title = T.language; });
-    document.querySelectorAll(".of-label").forEach((e) => e.textContent = T.ofLink);
+    document.querySelectorAll(".of-label").forEach((e) => e.textContent = OF_LABEL);
     set("#gate-title", T.gateTitle); set("#gate-text", T.gateText); set("#gate-yes", T.gateYes); set("#gate-no", T.gateNo);
     set("#intro-skip", T.introSkip); set("#btn-intro", T.introReplay); set(".intro-tag-sub", T.introTag);
     $("#btn-intro").hidden = !window.INTRO;
