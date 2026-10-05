@@ -83,12 +83,19 @@
     return x;
   }
 
+  // 網站上顯示的「OnlyFans」一律換成 BRAND（只改畫面文字；原始資料、語音檔與 OF 連結網址都不動）
+  // 想改成文字版，例如 "exclusive website"，只要改這一行
+  const BRAND = "🤍💙";
+  const debrand = (x) => typeof x === "string" ? x.replace(/onlyfans/gi, BRAND)
+    : Array.isArray(x) ? x.map(debrand)
+    : x && typeof x === "object" ? Object.fromEntries(Object.entries(x).map(([k, v]) => [k, debrand(v)])) : x;
+
   let C, LESSONS, VOICE, T, LANG;
   function loadLang() {
     LANG = LANGS.find((l) => l.code === lang);
     // 語音目前只有中文與英文：中文語系用中文語音，其他語系一律播英文語音（字幕仍為該語言）
     VOICE = VOICES[lang.startsWith("zh") ? lang : "en"] || {};
-    T = UI[lang] || UI.en;
+    T = debrand(UI[lang] || UI.en);
     if (COURSES[lang]) buildLessons();
     document.documentElement.lang = lang;
     document.body.classList.toggle("lang-en", LANG.latin);
@@ -109,7 +116,7 @@
     updateStartBtn();
   }
   function buildLessons() {
-    C = filterRegion(COURSES[lang], LANG.region);
+    C = debrand(filterRegion(COURSES[lang], LANG.region));
     LESSONS = [];
     C.modules.forEach((m) => {
       if (m.intro) LESSONS.push({ ...m.intro, id: `${m.no}.intro`, label: T.intro, title: m.title, kind: "intro", bg: m.intro.bg || m.bg, module: m });
@@ -440,11 +447,13 @@
     el.textContent = text;
     fitDialog(el, text);
     el.textContent = "";
-    let n = 0; const step = Math.max(18, (seconds * 1000) / text.length);
+    // 以「完整字元」逐字打出（Array.from 依 code point 切），emoji 不會被切成一半顯示成亂碼
+    const chars = Array.from(text);
+    let n = 0; const step = Math.max(18, (seconds * 1000) / chars.length);
     typer = setInterval(() => {
-      n++; el.textContent = text.slice(0, n);
+      n++; el.textContent = chars.slice(0, n).join("");
       if (n % 3 === 0 && !voice) sfx("blip");
-      if (n >= text.length) { clearInterval(typer); typer = null; }
+      if (n >= chars.length) { clearInterval(typer); typer = null; }
     }, step);
   }
   function startFlap(pose) {
@@ -533,7 +542,7 @@
     const key = stage.classList.contains("portrait") && INTRO.videos[base + "_portrait"] ? base + "_portrait" : base;
     const v = INTRO.videos[key];
     introThen = then;
-    introCues = ((INTRO.subs[lang] || INTRO.subs.en)[key]) || [];
+    introCues = debrand(((INTRO.subs[lang] || INTRO.subs.en)[key]) || []);
     introTag = v.nametag || [0, 0];
     introSub.textContent = "";
     introTagEl.classList.remove("show");
@@ -638,7 +647,7 @@
       big: () => `<div class="b-big"><div class="label">${esc(b.label)}</div><div class="value">${esc(b.value)}</div><div class="note">${esc(b.note || "")}</div></div>`,
       bullets: () => `${H}<div class="b-bullets">${b.items.map((it) => `<div class="item"><span class="ic">${it.icon}</span><span class="lb">${esc(it.label)}</span><span class="tx">${esc(it.text)}</span></div>`).join("")}</div>`,
       split: () => `${H}<div class="b-split"><div class="bars"><div class="seg a" data-w="${b.a.value}">${esc(b.a.label)} ${b.a.value}%</div><div class="seg b" data-w="${b.b.value}">${b.b.value}%</div></div><div class="coins">${"🪙".repeat(8)}<span style="opacity:.35">${"🪙".repeat(2)}</span></div><div class="b-note">${esc(b.note)}</div></div>`,
-      compare: () => `${H}<div class="b-compare">${b.rows.map((r) => `<div class="item${r.k === "OnlyFans" ? " star" : ""}"><div class="k">${esc(r.k)}</div><div class="v">${esc(r.v)}</div></div>`).join("")}</div>`,
+      compare: () => `${H}<div class="b-compare">${b.rows.map((r) => `<div class="item${r.k === BRAND ? " star" : ""}"><div class="k">${esc(r.k)}</div><div class="v">${esc(r.v)}</div></div>`).join("")}</div>`,
       funnel: () => `${H}<div class="b-funnel">${b.stages.map((s, i) => `${i ? '<div class="arrow">▼</div>' : ""}<div class="item"><b style="font-weight:normal">${esc(s.label)}</b><small>${esc(s.sub)}</small></div>`).join("")}</div>`,
       checklist: () => {
         const on = checks[b.id] || [];
