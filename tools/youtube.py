@@ -58,12 +58,11 @@ def chibi(name, height):
     return c.resize((round(c.width * k), height), Image.NEAREST)
 
 
-# ---------- 封面圖 1280×720 ----------
+# ---------- 封面圖 1280×720（英文；第一版排版：左邊大字、右邊斜放照片卡） ----------
 def thumbnail():
     W, H = 1280, 720
     im = background(W, H)
-    # 背景裡有一枚金幣剛好落在「0.01%」的小數點旁，用旁邊的夜空蓋掉
-    im.paste(im.crop((400, 200, 446, 262)), (468, 200))
+    im.paste(im.crop((400, 200, 446, 262)), (468, 200))  # 蓋掉背景金幣（會落在文字小數點旁）
     # 左側壓暗，讓字更清楚
     grad = Image.new("L", (W, H))
     gd = ImageDraw.Draw(grad)
@@ -72,30 +71,33 @@ def thumbnail():
     im = Image.composite(Image.new("RGB", (W, H), (28, 15, 36)), im, grad)
     d = ImageDraw.Draw(im)
 
-    # 右側：本人照片卡（中文版 10.6 秒揮手打招呼的畫面）
-    frame = Image.open(OUT / "face_full.png").convert("RGB")
-    photo = frame.crop((1180, 120, 2700, 2160)).resize((470, 630), Image.LANCZOS)
+    # 右側：本人照片卡（她提供的照片，先用 tools/enhance_photo.py 以 4x-UltraSharp 放大 2 倍 → photo_hq.jpg）
+    from PIL import ImageEnhance
+    frame = Image.open(OUT / "photo_hq.jpg").convert("RGB")
+    frame = ImageEnhance.Color(ImageEnhance.Contrast(frame).enhance(1.04)).enhance(1.06)
+    PWC, PHC = 560, 600
+    cw = 1450  # 涵蓋臉和兩隻攤開的手；上方天空裁掉
+    ch = round(cw * PHC / PWC)
+    photo = frame.crop((535, 1920 - ch, 535 + cw, 1920)).resize((PWC, PHC), Image.LANCZOS)
     card = Image.new("RGBA", (photo.width + 28, photo.height + 28), INK + (255,))
     ImageDraw.Draw(card).rectangle((8, 8, card.width - 9, card.height - 9), fill=PINK)
     card.paste(photo, (14, 14))
     card = card.rotate(-3, resample=Image.BICUBIC, expand=True)
     shadow = Image.new("RGBA", card.size, (0, 0, 0, 0))
     shadow.paste(Image.new("RGBA", card.size, INK + (200,)), mask=card.split()[3])
-    im.paste(shadow, (W - card.width - 22 + 12, 34 + 12), shadow)
-    im.paste(card, (W - card.width - 22, 34), card)
+    im.paste(shadow, (W - card.width - 22 + 12, 50 + 12), shadow)
+    im.paste(card, (W - card.width - 22, 50), card)
 
     # 左側文字
-    text(d, (52, 70), "全球前", 60, (255, 255, 255), stroke=6, shadow=6)
-    text(d, (44, 128), "TOP 0.01%", 144, YELLOW, stroke=10, shadow=10)
-    text(d, (54, 290), "OnlyFans 創作者的系統", 60, (255, 255, 255), stroke=6, shadow=6)
-    text(d, (54, 362), "The OnlyFans Creator System", 36, (255, 220, 236), stroke=5, shadow=5)
-    # 免費課程徽章
+    text(d, (52, 70), "THE GLOBAL", 60, (255, 255, 255), stroke=6, shadow=6)
+    text(d, (44, 136), "TOP 0.01%", 120, YELLOW, stroke=10, shadow=10)
+    text(d, (54, 290), "OnlyFans Creator", 60, (255, 255, 255), stroke=6, shadow=6)
+    text(d, (54, 362), "It's not luck. It's a system.", 36, (255, 220, 236), stroke=5, shadow=5)
     pixel_box(d, (54, 440, 560, 528), PINK_DEEP)
-    text(d, (307, 486), "FREE 免費完整課程", 48, (255, 255, 255), stroke=4, anchor="mm")
-    # Q 版角色
+    text(d, (307, 486), "FREE FULL COURSE", 48, (255, 255, 255), stroke=4, anchor="mm")
     c = chibi("cheer", 220)
     im.paste(c, (560, H - c.height - 6), c)
-    text(d, (60, 572), "8 languages · 8 種語言", 34, (236, 226, 255), stroke=5, shadow=4)
+    text(d, (60, 572), "8 languages · No sign-up", 34, (236, 226, 255), stroke=5, shadow=4)
     im.save(OUT / "thumbnail.jpg", quality=92)
     im.save(OUT / "thumbnail.png")
     print("thumbnail.jpg", im.size)
