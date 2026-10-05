@@ -67,8 +67,8 @@ def gif(src_dir, out):
     meta = json.loads((src_dir / "meta.json").read_text())
     fps = round(meta["frames"] / meta["seconds"], 3)
     # 像素風畫面：640 寬、128 色、輕微抖色，控制每支約 1 MB 內
-    vf = ("scale=640:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=128:stats_mode=diff[p];"
-          "[b][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle")
+    vf = ("scale=640:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=128[p];"
+          "[b][p]paletteuse=dither=bayer:bayer_scale=5")
     run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(fps), "-i", str(src_dir / "f%04d.jpg"),
          "-vf", vf, "-loop", "0", str(out)])
 
